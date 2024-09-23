@@ -4,9 +4,9 @@ import profilePicture from "../images/profile-picture.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="bg-gray-800 p-10 text-center">
+    <section id="about" className="p-10 text-center">
       <img
-        src="{profilePicture}"
+        src={profilePicture.src}
         alt="Profile Picture"
         className="rounded-full w-32 h-32 mx-auto mb-4"
         aria-hidden="true"
