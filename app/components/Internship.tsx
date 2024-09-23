@@ -4,7 +4,7 @@ import Tangen from "../images/tangen-babord.jpg";
 
 const Internship = () => {
   return (
-    <section id="internship" className="bg-nero text-white p-8">
+    <section id="internship" className=" text-white p-8">
       <div className="container mx-auto">
         {/* Blog Title */}
         <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-red-500 to-red-500 mb-4">
