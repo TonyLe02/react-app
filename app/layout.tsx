@@ -7,7 +7,6 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import History from "./components/History";
 import Footer from "./components/Footer";
-import TracingBeam from "./components/ui/tracing-beam";
 import Internship from "./components/Internship";
 
 export const metadata: Metadata = {

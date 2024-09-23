@@ -17,15 +17,13 @@ const Internship = () => {
           Joining Swipload Technologies AS
         </p>
         <p>
-          <LinkPreview url="https://nthomtng.github.io/PraksisNettSide/index.html">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://nthomtng.github.io/PraksisNettSide/index.html"
-              className="text-lg font-semibold text-white hover:underline hover:text-green-500 transition-colors duration-300 ease-in-out"
-            >
-              Intern Website - Click Here
-            </a>
+          <LinkPreview
+            url="https://nthomtng.github.io/PraksisNettSide/index.html"
+            className="text-lg font-semibold text-white hover:underline hover:text-green-500 transition-colors duration-300 ease-in-out"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Intern Website - Click Here
           </LinkPreview>
         </p>
 
@@ -64,15 +62,13 @@ const Internship = () => {
           August 20th, 2024
         </h2>
         <p className="mb-4">
-          <LinkPreview url="https://nthomtng.github.io/PraksisNettSide/pages/status.html">
-            <a
-              className="text-lg font-semibold text-white hover:underline hover:text-green-500 transition-colors duration-300 ease-in-out"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://nthomtng.github.io/PraksisNettSide/pages/status.html"
-            >
-              Learn more about my internship status here
-            </a>
+          <LinkPreview
+            url="https://nthomtng.github.io/PraksisNettSide/pages/status.html"
+            className="text-lg font-semibold text-white hover:underline hover:text-green-500 transition-colors duration-300 ease-in-out"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn more about my internship - Click here
           </LinkPreview>
         </p>
         <p>
