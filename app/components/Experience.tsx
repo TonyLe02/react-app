@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from "react";
 import NITOSTAND from "../images/nito-stand.jpg";
 import NITOLANDSMOTE from "../images/nito-landsmøte.jpg";

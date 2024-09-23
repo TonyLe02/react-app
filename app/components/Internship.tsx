@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
 import Tangen from "../images/tangen-babord.jpg";

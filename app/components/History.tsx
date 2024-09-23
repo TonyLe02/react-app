@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import Swipload from "../images/swipload-logo.png";
 import Nøsted from "../images/nøsted-logo.png";

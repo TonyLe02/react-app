@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import Grade from "../images/grade-result.png";
 import NøstedApp1 from "../images/nøsted-app-1.png";

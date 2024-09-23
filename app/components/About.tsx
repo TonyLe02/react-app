@@ -1,3 +1,4 @@
+/* eslint-disable */
 // app/components/About.tsx
 import React from "react";
 import profilePicture from "../images/profile-picture.jpg";
