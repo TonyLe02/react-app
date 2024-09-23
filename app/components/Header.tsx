@@ -2,7 +2,7 @@ import faviIcon from "../favicon.ico";
 
 const Header = () => {
   return (
-    <nav className="bg-white shadow border-gray-200">
+    <nav className="bg-white shadow border-gray-200 overflow">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="" className="flex items-center">
           <img
