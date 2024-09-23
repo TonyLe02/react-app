@@ -11,12 +11,14 @@ const About = () => {
       className="flex flex-col items-center justify-center min-h-screen p-4 text-center"
       id="about"
     >
-      <img
-        src={profilePicture.src}
-        alt="Profile Picture"
-        className="rounded-full w-24 h-24 md:w-32 md:h-32 mb-4"
-        aria-hidden="true"
-      />
+      <div className="relative z-20">
+        <img
+          src={profilePicture.src}
+          alt="Profile Picture"
+          className="rounded-full w-24 h-24 md:w-32 md:h-32 mb-4"
+          aria-hidden="true"
+        />
+      </div>
       <h1 className="block font-extrabold text-3xl md:text-4xl py-2 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-2">
         Tony Nguyen Le
       </h1>

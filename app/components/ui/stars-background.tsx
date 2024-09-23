@@ -42,102 +42,62 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
       const area = width * height;
       const numStars = Math.floor(area * starDensity);
       return Array.from({ length: numStars }, () => {
-        const shouldTwinkle =
-          allStarsTwinkle || Math.random() < twinkleProbability;
+        const shouldTwinkle = allStarsTwinkle || Math.random() < twinkleProbability;
+        const twinkleSpeed = shouldTwinkle
+          ? Math.random() * (maxTwinkleSpeed - minTwinkleSpeed) + minTwinkleSpeed
+          : null;
         return {
           x: Math.random() * width,
           y: Math.random() * height,
-          radius: Math.random() * 0.05 + 0.5,
-          opacity: Math.random() * 0.5 + 0.5,
-          twinkleSpeed: shouldTwinkle
-            ? minTwinkleSpeed +
-              Math.random() * (maxTwinkleSpeed - minTwinkleSpeed)
-            : null,
+          radius: Math.random() * 1.5,
+          opacity: Math.random(),
+          twinkleSpeed,
         };
       });
     },
-    [
-      starDensity,
-      allStarsTwinkle,
-      twinkleProbability,
-      minTwinkleSpeed,
-      maxTwinkleSpeed,
-    ]
+    [starDensity, allStarsTwinkle, twinkleProbability, minTwinkleSpeed, maxTwinkleSpeed]
   );
-
-  useEffect(() => {
-    const updateStars = () => {
-      if (canvasRef.current) {
-        const canvas = canvasRef.current;
-        const ctx = canvas.getContext("2d");
-        if (!ctx) return;
-
-        const { width, height } = canvas.getBoundingClientRect();
-        canvas.width = width;
-        canvas.height = height;
-        setStars(generateStars(width, height));
-      }
-    };
-
-    updateStars();
-
-    const resizeObserver = new ResizeObserver(updateStars);
-    if (canvasRef.current) {
-      resizeObserver.observe(canvasRef.current);
-    }
-
-    return () => {
-      if (canvasRef.current) {
-        resizeObserver.unobserve(canvasRef.current);
-      }
-    };
-  }, [
-    starDensity,
-    allStarsTwinkle,
-    twinkleProbability,
-    minTwinkleSpeed,
-    maxTwinkleSpeed,
-    generateStars,
-  ]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (canvas) {
+      const context = canvas.getContext("2d");
+      if (context) {
+        const handleResize = () => {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          setStars(generateStars(canvas.width, canvas.height));
+        };
 
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+        handleResize();
+        window.addEventListener("resize", handleResize);
 
-    let animationFrameId: number;
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }
+    }
+  }, [generateStars]);
 
-    const render = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      stars.forEach((star) => {
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
-        ctx.fill();
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (canvas) {
+      const context = canvas.getContext("2d");
+      if (context) {
+        const render = () => {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          stars.forEach((star) => {
+            context.beginPath();
+            context.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);
+            context.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+            context.fill();
+          });
+        };
 
-        if (star.twinkleSpeed !== null) {
-          star.opacity =
-            0.5 +
-            Math.abs(Math.sin((Date.now() * 0.001) / star.twinkleSpeed) * 0.5);
-        }
-      });
-
-      animationFrameId = requestAnimationFrame(render);
-    };
-
-    render();
-
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-    };
+        render();
+      }
+    }
   }, [stars]);
 
-  return (
-    <canvas
-      ref={canvasRef}
-      className={cn("h-full w-full absolute inset-0", className)}
-    />
-  );
+  return <canvas ref={canvasRef} className={cn("absolute inset-0", className)} />;
 };
