@@ -1,4 +1,3 @@
-"use client";
 import faviIcon from "../favicon.ico";
 
 const Header = () => {
