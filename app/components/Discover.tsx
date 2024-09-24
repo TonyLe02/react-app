@@ -5,7 +5,7 @@ import { Timeline } from "./ui/timeline";
 import Internship from "./Internship";
 import Projects from "./Projects";
 import Experience from "./Experience";
-import { title } from "process";
+import Academic from "./Academic";
 
 const Discover = () => {
   const timelineData = [
@@ -18,7 +18,11 @@ const Discover = () => {
       content: <Projects />,
     },
     {
-      title: "March 2022",
+      title: "August 2023",
+      content: <Academic />,
+    },
+    {
+      title: "March 2023",
       content: <Experience />,
     },
   ];
