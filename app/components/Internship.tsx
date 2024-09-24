@@ -30,29 +30,29 @@ const Internship = () => {
           and I am excited to share it with you all. 🚀
         </p>
         <br />
-        <div className="flex flex-row">
+        <div className="flex flex-col md:flex-row">
           <LinkPreview
             url="https://nthomtng.github.io/PraksisNettSide/index.html"
-            className="text-lg font-semibold text-white hover:underline hover:text-green-500 transition-colors duration-300 ease-in-out"
+            className="text-xs md:text-lg font-semibold text-white hover:underline hover:text-green-500 transition-colors duration-300 ease-in-out"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="p-[3px] relative mr-4">
+            <button className="p-[2px] md:p-[3px] relative mb-4 md:mb-0 md:mr-4">
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-              <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
+              <div className="px-4 py-2 md:px-8 md:py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
                 Intern Website
               </div>
             </button>
           </LinkPreview>
           <LinkPreview
             url="https://nthomtng.github.io/PraksisNettSide/pages/status.html"
-            className="text-lg font-semibold text-white hover:underline hover:text-green-500 transition-colors duration-300 ease-in-out"
+            className="text-xs md:text-lg font-semibold text-white hover:underline hover:text-green-500 transition-colors duration-300 ease-in-out"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="p-[3px] relative">
+            <button className="p-[2px] md:p-[3px] relative">
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-              <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
+              <div className="px-4 py-2 md:px-8 md:py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
                 Learn more about my internship
               </div>
             </button>
