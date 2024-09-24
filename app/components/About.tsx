@@ -25,17 +25,10 @@ const About = () => {
       <p className="text-lg md:text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-8">
         I'm an aspiring developer with a passion for data technology.
       </p>
-      <p className="text-lg md:text-2xl mb-8 text-white">
-        Currently in my 3rd year of IT & Information Systems at the University
-        of Agder.
+      <p className="text-6xl md:text-8xl font-extrabold mb-8">
+        🚀
       </p>
-      <p className="text-lg md:text-2xl mb-8 text-white">
-        I enjoy building applications and am constantly learning new things to
-        improve my skills.
-      </p>
-      <p className="text-lg md:text-2xl mb-8 text-white">
-        I hope you enjoy scrolling through and learning more about me!
-      </p>
+
       <ShootingStars />
       <StarsBackground />
     </section>

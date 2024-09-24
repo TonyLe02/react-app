@@ -45,10 +45,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </h2>
         <p className="text-white text-sm md:text-base max-w-sm">
           I’m Tony Nguyen Le, an aspiring developer passionate about data
-          technology. As a 3rd-year IT & Information Systems student at the
-          University of Agder, I’ve spent the last 3 years learning various
-          technologies and how to utilize them effectively. Here’s a glimpse
-          into my journey!
+          technology.
+        </p>
+        <p className="text-white text-sm md:text-base max-w-sm mt-4">
+          As a third-year IT and Information Systems student at the University of
+          Agder, I’ve spent the last 3 years learning various technologies and
+          understanding the importance of digitalization in a future society.
+        </p>
+        <p className="text-white text-sm md:text-base max-w-sm mt-4">
+          Here’s a glimpse into my journey as a student!
         </p>
       </div>
 
