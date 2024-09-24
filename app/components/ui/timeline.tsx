@@ -40,17 +40,18 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="container mx-auto py-20 px-4 md:px-8 lg:px-10 max-w-7xl">
-        <h2 className="text-lg md:text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 max-w-4xl">
+        <h2 className="text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 max-w-4xl">
           Discover My Tech Journey
         </h2>
-        <p className="text-white text-sm md:text-base max-w-sm">
+        <p className="text-white text-sm md:text-base max-w-sm mt-2">
           I’m Tony Nguyen Le, an aspiring developer passionate about data
           technology.
         </p>
         <p className="text-white text-sm md:text-base max-w-sm mt-4">
-          As a third-year IT and Information Systems student at the University of
-          Agder, I’ve spent the last 3 years learning various technologies and
-          understanding the importance of digitalization in a future society.
+          As a third-year IT and Information Systems student at the University
+          of Agder, I’ve spent the last 3 years learning various technologies
+          and understanding the importance of digitalization in a future
+          society.
         </p>
         <p className="text-white text-sm md:text-base max-w-sm mt-4">
           Here’s a glimpse into my journey as a student!
