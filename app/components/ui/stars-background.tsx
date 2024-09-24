@@ -26,10 +26,10 @@ interface StarBackgroundProps {
 }
 
 export const StarsBackground: React.FC<StarBackgroundProps> = ({
-  starDensity = 0.0015,
+  starDensity = 0.00029,
   allStarsTwinkle = true,
-  twinkleProbability = 0.7,
-  minTwinkleSpeed = 0.5,
+  twinkleProbability = 0.929,
+  minTwinkleSpeed = 0.529,
   maxTwinkleSpeed = 1,
   className,
 }) => {
@@ -42,9 +42,11 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
       const area = width * height;
       const numStars = Math.floor(area * starDensity);
       return Array.from({ length: numStars }, () => {
-        const shouldTwinkle = allStarsTwinkle || Math.random() < twinkleProbability;
+        const shouldTwinkle =
+          allStarsTwinkle || Math.random() < twinkleProbability;
         const twinkleSpeed = shouldTwinkle
-          ? Math.random() * (maxTwinkleSpeed - minTwinkleSpeed) + minTwinkleSpeed
+          ? Math.random() * (maxTwinkleSpeed - minTwinkleSpeed) +
+            minTwinkleSpeed
           : null;
         return {
           x: Math.random() * width,
@@ -55,7 +57,13 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
         };
       });
     },
-    [starDensity, allStarsTwinkle, twinkleProbability, minTwinkleSpeed, maxTwinkleSpeed]
+    [
+      starDensity,
+      allStarsTwinkle,
+      twinkleProbability,
+      minTwinkleSpeed,
+      maxTwinkleSpeed,
+    ]
   );
 
   useEffect(() => {
@@ -64,16 +72,21 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
       const context = canvas.getContext("2d");
       if (context) {
         const handleResize = () => {
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
+          const devicePixelRatio = window.devicePixelRatio || 1;
+          canvas.width = window.innerWidth * devicePixelRatio;
+          canvas.height = window.innerHeight * devicePixelRatio;
+          canvas.style.width = `${window.innerWidth}px`;
+          canvas.style.height = `${window.innerHeight}px`;
+          context.scale(devicePixelRatio, devicePixelRatio);
           setStars(generateStars(canvas.width, canvas.height));
         };
 
+        const throttledResize = throttle(handleResize, 200);
         handleResize();
-        window.addEventListener("resize", handleResize);
+        window.addEventListener("resize", throttledResize);
 
         return () => {
-          window.removeEventListener("resize", handleResize);
+          window.removeEventListener("resize", throttledResize);
         };
       }
     }
@@ -92,6 +105,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
             context.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
             context.fill();
           });
+          requestAnimationFrame(render);
         };
 
         render();
@@ -99,5 +113,29 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     }
   }, [stars]);
 
-  return <canvas ref={canvasRef} className={cn("absolute inset-0", className)} />;
+  return (
+    <canvas ref={canvasRef} className={cn("absolute inset-0", className)} />
+  );
+};
+
+// Utility function to throttle the resize event
+const throttle = (func: () => void, limit: number) => {
+  let lastFunc: number;
+  let lastRan: number;
+  return function (this: any) {
+    const context = this;
+    const args = arguments;
+    if (!lastRan) {
+      func.apply(context, args as any);
+      lastRan = Date.now();
+    } else {
+      clearTimeout(lastFunc);
+      lastFunc = window.setTimeout(function () {
+        if (Date.now() - lastRan >= limit) {
+          func.apply(context, args as any);
+          lastRan = Date.now();
+        }
+      }, limit - (Date.now() - lastRan));
+    }
+  };
 };
