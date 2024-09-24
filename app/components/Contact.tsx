@@ -8,6 +8,7 @@ import {
   FaInstagram,
   FaFacebook,
 } from "react-icons/fa";
+import { LinkPreview } from "./ui/link-preview";
 
 const Contact = () => {
   return (
@@ -36,8 +37,8 @@ const Contact = () => {
             </a>
           </li>
           <li className="mx-2">
-            <a
-              href="https://www.linkedin.com/in/tonynl02"
+            <LinkPreview
+              url="https://www.linkedin.com/in/tonynl02"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -45,11 +46,11 @@ const Contact = () => {
                 size={30}
                 className="transition-transform transform hover:scale-110 hover:brightness-75"
               />
-            </a>
+            </LinkPreview>
           </li>
           <li className="mx-2">
-            <a
-              href="https://github.com/TonyLe02"
+            <LinkPreview
+              url="https://github.com/TonyLe02"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,11 +58,11 @@ const Contact = () => {
                 size={30}
                 className="transition-transform transform hover:scale-110 hover:brightness-75"
               />
-            </a>
+            </LinkPreview>
           </li>
           <li className="mx-2">
-            <a
-              href="https://www.instagram.com/tonyle02"
+            <LinkPreview
+              url="https://www.instagram.com/tonyle02"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,11 +70,11 @@ const Contact = () => {
                 size={30}
                 className="transition-transform transform hover:scale-110 hover:brightness-75"
               />
-            </a>
+            </LinkPreview>
           </li>
           <li className="mx-2">
-            <a
-              href="https://www.facebook.com/tonyle300602"
+            <LinkPreview
+              url="https://www.facebook.com/tonyle300602"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -81,7 +82,7 @@ const Contact = () => {
                 size={30}
                 className="transition-transform transform hover:scale-110 hover:brightness-75"
               />
-            </a>
+            </LinkPreview>
           </li>
         </ul>
       </div>
