@@ -40,7 +40,7 @@ const Internship = () => {
             <button className="p-[3px] relative mr-4">
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
               <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
-                Intern Website - Click Here
+                Intern Website
               </div>
             </button>
           </LinkPreview>
@@ -53,7 +53,7 @@ const Internship = () => {
             <button className="p-[3px] relative">
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
               <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
-                Learn more about my internship - Click here
+                Learn more about my internship
               </div>
             </button>
           </LinkPreview>
