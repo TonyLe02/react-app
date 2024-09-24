@@ -9,7 +9,7 @@ const Projects = () => {
     <section id="projects" className="text-white p-8">
       <div className="container mx-auto">
         <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 mb-4 md:leading-snug">
-          Programming Project - 3rd Semester
+          Programming Project
         </h2>
         <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 mb-4 md:leading-snug">
           (Aug 2023 - 2024)
