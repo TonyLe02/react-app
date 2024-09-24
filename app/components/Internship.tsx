@@ -5,7 +5,7 @@ const Internship = () => {
   return (
     <section id="internship" className="text-white p-8">
       <div className="container mx-auto">
-        <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 mb-4 leading-snug">
+        <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 mb-4 md:leading-snug">
           Internship - at Swipload Technologies AS
         </h2>
 

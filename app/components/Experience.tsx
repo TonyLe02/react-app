@@ -8,11 +8,11 @@ const Experience = () => {
   return (
     <section id="experience" className="bg-nero text-white p-8">
       <div className="container mx-auto">
-        <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-green-600 to-green-600 mb-4 leading-snug ">
+        <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 mb-4 md:leading-snug">
           Student Organization Leader
         </h2>
 
-        <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-green-600 to-green-600 mb-4 leading-snug">
+        <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 mb-4 md:leading-snug">
           (Mar 2022 - 2025)
         </h2>
         <p className="mb-4">
@@ -66,7 +66,7 @@ const Experience = () => {
         <p className="text-xl md:text-3xl text-green-500 font-bold mt-4">
           Skills Learned:
         </p>
-        <ul>
+        <ul className="text-lg list-none">
           <li className="flex items-center">
             <span className="text-green-500 mr-2">✓</span> Leadership
           </li>
