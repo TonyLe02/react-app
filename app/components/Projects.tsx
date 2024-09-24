@@ -8,10 +8,10 @@ const Projects = () => {
   return (
     <section id="projects" className="text-white p-8">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-green-500 to-blue-500 mb-4 leading-snug">
+        <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-green-500 to-blue-500 mb-4 leading-snug">
           Programming Project - 3rd Semester
         </h2>
-        <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-green-500 to-blue-500 mb-4 leading-snug">
+        <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-green-500 to-blue-500 mb-4 leading-snug">
           (Aug 2023 - 2024)
         </h2>
         <p className="mb-4">
@@ -74,10 +74,10 @@ const Projects = () => {
           </div>
         </div>
 
-        <p className="text-3xl text-green-500 font-bold mt-4">
+        <p className="text-xl md:text-3xl text-green-500 font-bold mt-4">
           Skills Learned:
         </p>
-        <ul className="text-lg list-none">
+        <ul>
           <li className="flex items-center">
             <span className="text-green-500 mr-2">✓</span> System Analysis
           </li>

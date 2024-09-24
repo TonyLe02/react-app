@@ -8,20 +8,21 @@ const Experience = () => {
   return (
     <section id="experience" className="bg-nero text-white p-8">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-green-600 to-green-600 mb-4 leading-snug ">
+        <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-green-600 to-green-600 mb-4 leading-snug ">
           Student Organization Leader
         </h2>
 
-        <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-green-600 to-green-600 mb-4 leading-snug">
+        <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-green-600 to-green-600 mb-4 leading-snug">
           (Mar 2022 - 2025)
         </h2>
         <p className="mb-4">
           In 2022, I began my studies in IT. On my first day, I was introduced
           to NITO Studentene, a union for engineering and technology students.
-          An interesting twist: my upperclassman during the start of my studies was the
-          chairperson of NITO Studentene, along with my other mentor, both of
-          whom were dedicated students actively involved in organizations like
-          NITO and Systematicus (the student organization for IT).
+          An interesting twist: my upperclassman during the start of my studies
+          was the chairperson of NITO Studentene, along with my other mentor,
+          both of whom were dedicated students actively involved in
+          organizations like NITO and Systematicus (the student organization for
+          IT).
         </p>
         <p className="mb-4">
           During an introductory event, my mentor introduced me to NITO at their
@@ -62,10 +63,10 @@ const Experience = () => {
           </div>
         </div>
 
-        <p className="text-3xl text-green-500 font-bold mt-4">
+        <p className="text-xl md:text-3xl text-green-500 font-bold mt-4">
           Skills Learned:
         </p>
-        <ul className="text-lg list-none">
+        <ul>
           <li className="flex items-center">
             <span className="text-green-500 mr-2">✓</span> Leadership
           </li>
