@@ -8,9 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import History from "./components/History";
 import Footer from "./components/Footer";
-import Internship from "./components/Internship";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
+import Discover from "./components/Discover";
 
 export const metadata: Metadata = {
   title: "Tony Nguyen Le",
@@ -25,9 +23,7 @@ export default function RootLayout() {
         <About />
         <Contact />
         <History />
-        <Internship />
-        <Projects />
-        <Experience />
+        <Discover />
         <Footer />
       </body>
     </html>
