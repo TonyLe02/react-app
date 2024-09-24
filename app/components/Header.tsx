@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import faviIcon from "../favicon.ico";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import { Cover } from "./ui/cover";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  /* Back to top button I WANT KEPT */
+  /* Back to top button */
   useEffect(() => {
     // Show or hide the button based on scroll position
     const handleScroll = () => {
@@ -89,7 +90,7 @@ const Header = () => {
                       href={`#${item.toLowerCase()}`}
                       className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 text-gray-900 hover:text-orange-500"
                     >
-                      {item}  
+                      {item}
                     </a>
                   </li>
                 )
@@ -99,14 +100,16 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* Back to top button I WANT KEPT */}
+      {/* Back to top button */}
       <button
         onClick={topFunction}
         id="myBtn"
         title="Go to top"
-        className="hidden fixed bottom-8 right-8 z-50 cursor-pointer p-3 rounded-full text-lg bg-yellow-500 hover:bg-yellow-600"
+        className="hidden fixed bottom-8 right-8 z-50 cursor-pointer p-3 rounded-full text-lg bg-[#121212] border-2 border-yellow-500 hover:border-yellow-600 items-center space-x-2"
       >
-        <FontAwesomeIcon icon={faRocket} className="text-white" />
+        <Cover>
+          <FontAwesomeIcon icon={faRocket} className="text-yellow-500" />
+        </Cover>
       </button>
     </>
   );
