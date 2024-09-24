@@ -32,7 +32,7 @@ const Contact = () => {
             >
               <FaEnvelope
                 size={30}
-                className="transition-transform transform hover:scale-110 hover:brightness-75"
+                className="transition-transform transform hover:scale-110 hover:brightness-75 text-white"
               />
             </a>
           </li>
@@ -44,7 +44,7 @@ const Contact = () => {
             >
               <FaLinkedin
                 size={30}
-                className="transition-transform transform hover:scale-110 hover:brightness-75"
+                className="transition-transform transform hover:scale-110 hover:brightness-75 text-white"
               />
             </LinkPreview>
           </li>
@@ -56,7 +56,7 @@ const Contact = () => {
             >
               <FaGithub
                 size={30}
-                className="transition-transform transform hover:scale-110 hover:brightness-75"
+                className="transition-transform transform hover:scale-110 hover:brightness-75 text-white"
               />
             </LinkPreview>
           </li>
@@ -68,7 +68,7 @@ const Contact = () => {
             >
               <FaInstagram
                 size={30}
-                className="transition-transform transform hover:scale-110 hover:brightness-75"
+                className="transition-transform transform hover:scale-110 hover:brightness-75 text-white"
               />
             </LinkPreview>
           </li>
@@ -80,7 +80,7 @@ const Contact = () => {
             >
               <FaFacebook
                 size={30}
-                className="transition-transform transform hover:scale-110 hover:brightness-75"
+                className="transition-transform transform hover:scale-110 hover:brightness-75 text-white"
               />
             </LinkPreview>
           </li>
