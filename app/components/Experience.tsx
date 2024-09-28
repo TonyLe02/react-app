@@ -34,7 +34,7 @@ const Experience = () => {
           that offers so much?
         </p>
         <p className="mb-4">
-          In March 2022, I became a board member, engaging in meaningful
+          In March 2023, I became a board member, engaging in meaningful
           activities and initiatives. Fast forward to January 2024, when I was
           appointed chairperson of NITO Studentene, a role I’ve held for almost
           a year now. It’s been an exciting and enriching experience, allowing
