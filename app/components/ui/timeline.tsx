@@ -42,7 +42,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="container mx-auto py-20 px-4 md:px-8 lg:px-10 max-w-7xl">
-        <h2 className="text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 max-w-4xl">
+        <h2 className="text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 max-w-4xl !leading-relaxed">
           Discover My Tech Journey
         </h2>
         <div className="flex flex-col md:flex-row md:gap-10">
