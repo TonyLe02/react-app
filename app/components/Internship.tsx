@@ -30,7 +30,7 @@ const Internship = () => {
           assignments. By connecting contractors and drivers, it reduces empty
           trips and enhances efficiency, helping businesses save costs. Their
           platform integrates CO2 calculations, enabling users to track and
-          reduce emissions, making transport more eco-friendly. Swipload's
+          reduce emissions, making transport more eco-friendly. Swipload&apos;s
           solutions not only streamline logistics operations but also support
           sustainability efforts in the industry. With a focus on greener and
           smarter transportation, they are shaping the future of logistics.
