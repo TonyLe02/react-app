@@ -45,11 +45,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     offset: ["start 10%", "end 50%"],
   });
 
-  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height], {
-    type: "spring",
-    stiffness: 300,
-    damping: 30,
-  });
+  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
 
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
