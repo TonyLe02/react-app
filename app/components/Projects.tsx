@@ -34,6 +34,13 @@ const Projects = () => {
           experience in using powerful tools for web development.
         </p>
         <p className="mb-4">
+          Additionally, we embraced the Azure DevOps methodology to optimize our
+          human resources across various areas of the information system. We
+          conducted daily Scrum stand-ups to keep everyone aligned and utilized
+          the Azure DevOps Kanban board to efficiently track our progress and
+          manage tasks.
+        </p>
+        <p className="mb-4">
           I'm also happy to share that I got an A during this project. The
           images below provide a glimpse into the user interface of our
           application. They showcase the service form and checklist features, as
