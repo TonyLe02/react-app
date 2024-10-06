@@ -2,13 +2,8 @@
 "use client";
 
 import Fornebu from "../../images/nito-fornebu.png";
-import Image from 'next/image';
-import {
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-  motion,
-} from "framer-motion";
+import Image from "next/image";
+import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -41,8 +36,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     setWindowHeight(window.innerHeight);
     const handleResize = () => setWindowHeight(window.innerHeight);
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const { scrollYProgress } = useScroll({
@@ -50,26 +45,25 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     offset: ["start 10%", "end 50%"],
   });
 
-  const heightTransform = useTransform(
-    scrollYProgress,
-    [0, 1],
-    [0, height],
-    { type: "spring", stiffness: 300, damping: 30 }
-  );
-  
+  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height], {
+    type: "spring",
+    stiffness: 300,
+    damping: 30,
+  });
+
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
       if (scrollTop > 500) {
-        setVisibleItems((prev) => prev + 3); // Load 3 more items on scroll
+        setVisibleItems((prev) => Math.min(prev + 3, data.length)); // Load 3 more items on scroll
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [data.length]);
 
   return (
     <div
@@ -113,21 +107,28 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+        <motion.div
+          style={{ scaleX: scrollYProgress }}
+          className="fixed top-0 left-0 h-1 bg-gradient-to-r from-yellow-500 via-red-500 to-transparent z-50"
+        />
         {data.slice(0, visibleItems).map((item, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="flex justify-start pt-10 md:pt-40 md:gap-10"
           >
             <div
               className="sticky flex flex-col md:flex-row z-40 items-center"
               style={{ top: windowHeight * 0.1 }} // 10% of viewport height
             >
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-black dark:bg-black flex items-center justify-center">
+              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-black dark:bg-black flex items-center justify-center timeline-marker">
                 <motion.div
                   className="h-4 w-4 rounded-full bg-green-500 dark:bg-green-500 border border-neutral-700 dark:border-neutral-700 p-2"
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
-                  transition={{ duration: 0.5, ease: 'easeOut' }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
                 />
               </div>
               <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-200 dark:text-neutral-200">
@@ -139,9 +140,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-200 dark:text-neutral-200">
                 {item.title}
               </h3>
-              {item.content}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4 }}
+              >
+                {item.content}
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         ))}
         <div
           style={{
@@ -154,7 +161,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-yellow-500 via-red-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-yellow-500 via-red-500 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>
