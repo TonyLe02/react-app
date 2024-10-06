@@ -62,10 +62,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </p>
           </div>
           <div className="md:w-1/2 mt-4 md:mt-0">
-            <img className="rounded-md border-2 border-[#78be20]" src={Fornebu.src} alt="Nito-Fornebu" />
+            <img className="rounded-xl" src={Fornebu.src} alt="Nito-Fornebu" />
             <p className="mt-2 text-center text-xs text-gray-300">
               - Teambuilding with leaders of the studentunion called NITO at
-              Quality Hotel EXPO in Fornebu (2024). 
+              Quality Hotel EXPO in Fornebu (2024).
             </p>
           </div>
         </div>
