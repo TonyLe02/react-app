@@ -1,6 +1,8 @@
 /* eslint-disable */
-
 "use client";
+
+import Fornebu from "../../images/nito-fornebu.png";
+
 import {
   useMotionValueEvent,
   useScroll,
@@ -43,19 +45,30 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 max-w-4xl">
           Discover My Tech Journey
         </h2>
-        <p className="text-white text-sm md:text-base max-w-sm mt-2">
-          I’m Tony Nguyen Le, an aspiring developer passionate about data
-          technology.
-        </p>
-        <p className="text-white text-sm md:text-base max-w-sm mt-4">
-          As a third-year IT and Information Systems student at the University
-          of Agder, I’ve spent the last 3 years learning various technologies
-          and understanding the importance of digitalization in a future
-          society.
-        </p>
-        <p className="text-white text-sm md:text-base max-w-sm mt-4">
-          Here’s a glimpse into my journey as a student!
-        </p>
+        <div className="flex flex-col md:flex-row md:gap-10">
+          <div className="md:w-2/3">
+            <p className="text-white text-sm md:text-base max-w-sm mt-2">
+              I’m Tony Nguyen Le, an aspiring developer passionate about data
+              technology.
+            </p>
+            <p className="text-white text-sm md:text-base max-w-sm mt-4">
+              As a third-year IT and Information Systems student at the
+              University of Agder, I’ve spent the last 3 years learning various
+              technologies and understanding the importance of digitalization in
+              a future society.
+            </p>
+            <p className="text-white text-sm md:text-base max-w-sm mt-4">
+              Here’s a glimpse into my journey as a student!
+            </p>
+          </div>
+          <div className="md:w-1/2 mt-4 md:mt-0">
+            <img src={Fornebu.src} alt="Nito-Fornebu" />
+            <p className="mt-2 text-center text-xs text-gray-300">
+              - Teambuilding with leaders of the studentunion called NITO at
+              Quality Hotel EXPO in Fornebu (2024). 
+            </p>
+          </div>
+        </div>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
