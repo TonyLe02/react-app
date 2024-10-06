@@ -39,7 +39,7 @@ const GithubStats = () => {
           <img
             className="w-full h-auto"
             src={`https://github-readme-stats.vercel.app/api/top-langs?username=TonyLe02&theme=transparent&hide_border=false&title_color=22c55e&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
-            alt="CodeBucks"
+            alt="Top Languages"
             loading="lazy"
           />
         </ItemLayout>
@@ -47,7 +47,7 @@ const GithubStats = () => {
           <img
             className="w-full h-auto"
             src={`https://github-readme-stats.vercel.app/api?username=TonyLe02&theme=transparent&hide_border=false&title_color=22c55e&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
-            alt="CodeBucks"
+            alt="Github Stats"
             loading="lazy"
           />
         </ItemLayout>
