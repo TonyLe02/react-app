@@ -25,6 +25,18 @@ const Internship = () => {
         </p>
         <br />
         <p>
+          Swipload is a Norwegian tech company transforming
+          logistics with a digital platform that optimizes heavy transport
+          assignments. By connecting contractors and drivers, it reduces empty
+          trips and enhances efficiency, helping businesses save costs. Their
+          platform integrates CO2 calculations, enabling users to track and
+          reduce emissions, making transport more eco-friendly. Swipload's
+          solutions not only streamline logistics operations but also support
+          sustainability efforts in the industry. With a focus on greener and
+          smarter transportation, they are shaping the future of logistics.
+        </p>
+        <br />
+        <p>
           Stay tuned for updates on my progress and experiences at Swipload
           Technologies AS. This is just the beginning of an incredible journey,
           and I am excited to share it with you all. 🚀
