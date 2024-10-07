@@ -11,9 +11,8 @@ const GithubStats = () => {
           <ItemLayout className={"col-span-full"}>
             <div className="container mx-auto">
               <h2 className="text-sm md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-2 md:leading-snug">
-                After three years of being an IT student, I have gained
-                experience within various technologies and here are some of the
-                tools and languages I am familiar with:
+                I have gained experience with various technologies and here are
+                some of the tools and languages I've become familiar with:
               </h2>
 
               <img
@@ -23,14 +22,14 @@ const GithubStats = () => {
                 loading="lazy"
               />
               <p className="text-white">
-                I am a very enthusiastic person when it comes to learning new
-                technologies. Many people have said that I look the happiest
-                when I discover new ways to build things, and that makes me very
-                happy. Because this really is the work I enjoy doing, I could
-                spend hours in an IDE and time would fly by without me knowing
-                it. I haven't learned everything yet, but I am a really fast
-                learner in the right environment, and I'm happy I got the chance
-                to intern in a great learning environment like at Swipload 😊
+                I am very enthusiastic about learning new technologies. Many
+                people have said that I look the happiest when I discover new
+                ways to build things, and that truly makes me happy. This is the
+                work I genuinely enjoy, and I could spend hours in an IDE
+                without noticing the time passing by. While I haven't learned
+                everything yet, I am a fast learner in the right environment,
+                and I am grateful for the opportunity to intern and learn even
+                more. 😊
               </p>
             </div>
           </ItemLayout>
