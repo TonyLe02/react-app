@@ -25,9 +25,7 @@ const About = () => {
       <p className="text-lg md:text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-8">
         I'm an aspiring developer with a passion for data technology.
       </p>
-      <p className="text-6xl md:text-8xl font-extrabold mb-8">
-        🚀
-      </p>
+      <p className="text-6xl md:text-8xl font-extrabold mb-8">🚀</p>
 
       <ShootingStars />
       <StarsBackground />

@@ -6,9 +6,9 @@ import ItemLayout from "./ItemLayout";
 const GithubStats = () => {
   return (
     <>
-      <div className="flex flex-wrap">
-        <ItemLayout className={"col-span-full"}>
-          <section id="internship" className="text-white p-8">
+      <section id="internship" className="text-white p-0 sm:px-16">
+        <div className="flex flex-wrap">
+          <ItemLayout className={"col-span-full"}>
             <div className="container mx-auto">
               <h2 className="text-sm md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-2 md:leading-snug">
                 After three years of being an IT student, I have gained
@@ -33,25 +33,29 @@ const GithubStats = () => {
                 to intern in a great learning environment like at Swipload 😊
               </p>
             </div>
-          </section>
-        </ItemLayout>
-        <ItemLayout className={"col-span-full p-4 sm:col-span-6 md:col-span-4"}>
-          <img
-            className="w-full h-auto"
-            src={`https://github-readme-stats.vercel.app/api/top-langs?username=TonyLe02&theme=transparent&hide_border=false&title_color=22c55e&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
-            alt="Top Languages"
-            loading="lazy"
-          />
-        </ItemLayout>
-        <ItemLayout className={"col-span-full p-4 sm:col-span-6 md:col-span-8"}>
-          <img
-            className="w-full h-auto"
-            src={`https://github-readme-stats.vercel.app/api?username=TonyLe02&theme=transparent&hide_border=false&title_color=22c55e&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
-            alt="Github Stats"
-            loading="lazy"
-          />
-        </ItemLayout>
-      </div>
+          </ItemLayout>
+          <ItemLayout
+            className={"col-span-full py-4 pr-4 sm:col-span-6 md:col-span-4"}
+          >
+            <img
+              className="w-full h-auto"
+              src={`https://github-readme-stats.vercel.app/api/top-langs?username=TonyLe02&theme=transparent&hide_border=false&title_color=22c55e&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
+              alt="Top Languages"
+              loading="lazy"
+            />
+          </ItemLayout>
+          <ItemLayout
+            className={"col-span-full py-4 sm:col-span-6 md:col-span-8"}
+          >
+            <img
+              className="w-full h-auto"
+              src={`https://github-readme-stats.vercel.app/api?username=TonyLe02&theme=transparent&hide_border=false&title_color=22c55e&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
+              alt="Github Stats"
+              loading="lazy"
+            />
+          </ItemLayout>
+        </div>
+      </section>
     </>
   );
 };

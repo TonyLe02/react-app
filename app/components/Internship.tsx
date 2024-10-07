@@ -4,9 +4,9 @@ import { LinkPreview } from "./ui/link-preview";
 
 const Internship = () => {
   return (
-    <section id="internship" className="text-white p-8">
+    <section id="internship" className="text-white p-0">
       <div className="container mx-auto">
-        <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 mb-2 md:leading-snug">
+        <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500  to-red-500 mb-2 md:leading-snug">
           Internship - at Swipload Technologies AS
         </h2>
 
@@ -51,7 +51,7 @@ const Internship = () => {
             rel="noopener noreferrer"
           >
             <button className="p-[2px] md:p-[3px] relative mb-4 md:mb-0 md:mr-4">
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500  to-red-500 rounded-lg" />
               <div className="px-4 py-2 md:px-8 md:py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
                 Intern Website
               </div>
@@ -64,7 +64,7 @@ const Internship = () => {
             rel="noopener noreferrer"
           >
             <button className="p-[2px] md:p-[3px] relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500  to-red-500 rounded-lg" />
               <div className="px-4 py-2 md:px-8 md:py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
                 Learn more about my internship
               </div>

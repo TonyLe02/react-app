@@ -6,12 +6,12 @@ import NøstedApp2 from "../images/nøsted-app-2.png";
 
 const Projects = () => {
   return (
-    <section id="projects" className="text-white p-8">
+    <section id="projects" className="text-white p-0">
       <div className="container mx-auto">
-        <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 mb-2 md:leading-snug">
-          Programming Project - Nøsted &
+        <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500 mb-2 md:leading-snug">
+          Programming Project with Nøsted &
         </h2>
-        <h2 className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 mb-2 md:leading-snug">
+        <h2 className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500 mb-2 md:leading-snug">
           (Aug 2023 - 2024)
         </h2>
         <p className="mb-4">
