@@ -6,7 +6,7 @@ import ItemLayout from "./ItemLayout";
 const GithubStats = () => {
   return (
     <>
-      <section id="internship" className="text-white p-0 sm:px-16">
+      <section className="text-white p-0 sm:px-16">
         <div className="flex flex-wrap">
           <ItemLayout className={"col-span-full"}>
             <div className="container mx-auto">

@@ -6,7 +6,7 @@ import NøstedApp2 from "../images/nøsted-app-2.png";
 
 const Projects = () => {
   return (
-    <section id="projects" className="text-white p-0">
+    <section id="projects" className="text-white p-0 anchor-offset">
       <div className="container mx-auto">
         <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500 mb-2 md:leading-snug">
           Programming Project with Nøsted &

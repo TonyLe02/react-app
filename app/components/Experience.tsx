@@ -6,7 +6,7 @@ import NITOLANDSMOTE from "../images/nito-landsmøte.jpg";
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-nero text-white p-0">
+    <section id="experience" className="bg-nero text-white p-0 anchor-offset">
       <div className="container mx-auto">
         <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500 mb-2 md:leading-snug">
           Student Organization Leader

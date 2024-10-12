@@ -27,6 +27,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.anchor-offset {
+  position: relative;
+  top: -75px; /* Adjust this value to match the height of your navbar */
+  padding-top: 90px; /* Same value as the height of your navbar */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

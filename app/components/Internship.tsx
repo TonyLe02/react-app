@@ -4,7 +4,7 @@ import { LinkPreview } from "./ui/link-preview";
 
 const Internship = () => {
   return (
-    <section id="internship" className="text-white p-0">
+    <section id="internship" className="text-white p-0 anchor-offset">
       <div className="container mx-auto">
         <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500  to-red-500 mb-2 md:leading-snug">
           Internship - at Swipload Technologies AS
@@ -26,13 +26,13 @@ const Internship = () => {
         </p>
         <br />
         <p>
-          Swipload is a Norwegian tech company transforming
-          logistics with a digital platform that optimizes heavy transport
-          assignments. By connecting contractors and drivers, it reduces empty
-          trips and enhances efficiency, helping businesses save costs. Their
-          platform integrates CO2 calculations, enabling users to track and
-          reduce emissions, making transport more eco-friendly. Swipload's
-          solutions not only streamline logistics operations but also support
+          Swipload is a Norwegian tech company transforming logistics with a
+          digital platform that optimizes heavy transport assignments. By
+          connecting contractors and drivers, it reduces empty trips and
+          enhances efficiency, helping businesses save costs. Their platform
+          integrates CO2 calculations, enabling users to track and reduce
+          emissions, making transport more eco-friendly. Swipload's solutions
+          not only streamline logistics operations but also support
           sustainability efforts in the industry. With a focus on greener and
           smarter transportation, they are shaping the future of logistics.
         </p>

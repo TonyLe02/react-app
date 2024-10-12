@@ -12,7 +12,7 @@ import { LinkPreview } from "./ui/link-preview";
 
 const Contact = () => {
   return (
-    <section id="contact" className="text-white text-center p-8">
+    <section id="contact" className="text-white text-center p-8 anchor-offset">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-4">
           Contact Information
