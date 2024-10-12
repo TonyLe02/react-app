@@ -95,8 +95,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               quality={85}
             />
             <p className="mt-2 text-center text-xs text-gray-300">
-              - Participated in a teambuilding event with the leaders of the
-              student union, NITO, at Quality Hotel EXPO in Fornebu, Oslo
+              - Met leaders from the student union NITO and participated in
+              teambuilding activities at Quality Hotel EXPO in Fornebu, Oslo
               (2024).
             </p>
           </div>
