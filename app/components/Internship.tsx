@@ -1,6 +1,8 @@
 /* eslint-disable */
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
+import group from "../images/group-photo.png";
+import status from "../images/status.png";
 
 const Internship = () => {
   return (
@@ -42,6 +44,28 @@ const Internship = () => {
           Technologies AS. This is just the beginning of an incredible journey,
           and I am excited to share it with you all. 🚀
         </p>
+
+        <div className="container mx-auto py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <img
+                src={group.src}
+                alt="NITO Landsmøte"
+                className="w-full h-auto object-cover rounded-lg shadow-md"
+                aria-hidden="true"
+              />
+            </div>
+            <div>
+              <img
+                src={status.src}
+                alt="NITO Stand"
+                className="w-full h-auto object-cover rounded-lg shadow-md"
+                aria-hidden="true"
+              />
+            </div>
+          </div>
+        </div>
+
         <br />
         <div className="flex flex-col md:flex-row">
           <LinkPreview
