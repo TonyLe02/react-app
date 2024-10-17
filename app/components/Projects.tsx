@@ -14,40 +14,42 @@ const Projects = () => {
         <h2 className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500 mb-2 md:leading-snug">
           (Aug 2023 - 2024)
         </h2>
-        <p className="mb-4">
-          During my third semester at the University of Agder, I participated in
-          a challenging programming project from Nøsted &. Our task was to
-          create an information system for the maintenance of winches. We
-          designed a model for filling out service forms that employees or
-          mechanics could complete, as well as checklists that needed to be
-          ticked off.
-        </p>
-        <p className="mb-4">
-          All the form information was stored in a database using MariaDB. With
-          this data, we were able to set up a service order overview. This
-          allowed us to go back to the order, view the information added, and
-          make changes as needed.
-        </p>
-        <p className="mb-4">
-          The project was developed using .NET & C#, which required us to become
-          familiar with these technologies. This provided us with valuable
-          experience in using powerful tools for web development.
-        </p>
-        <p className="mb-4">
-          Additionally, we embraced the Azure DevOps methodology to optimize our
-          human resources across various areas of the information system. We
-          conducted daily Scrum stand-ups to keep everyone aligned and utilized
-          the Azure DevOps Kanban board to efficiently track our progress and
-          manage tasks.
-        </p>
-        <p className="mb-4">
-          I'm also happy to share that I got an A during this project. The
-          images below provide a glimpse into the user interface of our
-          application. They showcase the service form and checklist features, as
-          well as the service order overview. Our goal was to create a
-          user-friendly interface that made the maintenance process more
-          efficient and manageable.
-        </p>
+        <div className="text-base md:text-lg">
+          <p className="mb-4">
+            During my third semester at the University of Agder, I participated in
+            a challenging programming project from Nøsted &. Our task was to
+            create an information system for the maintenance of winches. We
+            designed a model for filling out service forms that employees or
+            mechanics could complete, as well as checklists that needed to be
+            ticked off.
+          </p>
+          <p className="mb-4">
+            All the form information was stored in a database using MariaDB. With
+            this data, we were able to set up a service order overview. This
+            allowed us to go back to the order, view the information added, and
+            make changes as needed.
+          </p>
+          <p className="mb-4">
+            The project was developed using .NET & C#, which required us to become
+            familiar with these technologies. This provided us with valuable
+            experience in using powerful tools for web development.
+          </p>
+          <p className="mb-4">
+            Additionally, we embraced the Azure DevOps methodology to optimize our
+            human resources across various areas of the information system. We
+            conducted daily Scrum stand-ups to keep everyone aligned and utilized
+            the Azure DevOps Kanban board to efficiently track our progress and
+            manage tasks.
+          </p>
+          <p className="mb-4">
+            I'm also happy to share that I got an A during this project. The
+            images below provide a glimpse into the user interface of our
+            application. They showcase the service form and checklist features, as
+            well as the service order overview. Our goal was to create a
+            user-friendly interface that made the maintenance process more
+            efficient and manageable.
+          </p>
+        </div>
         <div className="container mx-auto py-8">
           <div className="flex justify-center mb-4">
             <img
@@ -85,21 +87,21 @@ const Projects = () => {
           Skills Learned:
         </p>
         <ul>
-          <li className="flex items-center">
+          <li className="flex items-center md:text-xl">
             <span className="text-green-500 mr-2">✓</span> System Analysis
           </li>
-          <li className="flex items-center">
+          <li className="flex items-center md:text-xl">
             <span className="text-green-500 mr-2">✓</span> Database Management
             with MariaDB
           </li>
-          <li className="flex items-center">
+          <li className="flex items-center md:text-xl">
             <span className="text-green-500 mr-2">✓</span> Web Development with
             .NET & C#
           </li>
-          <li className="flex items-center">
+          <li className="flex items-center md:text-xl">
             <span className="text-green-500 mr-2">✓</span> User Interface Design
           </li>
-          <li className="flex items-center">
+          <li className="flex items-center md:text-xl">
             <span className="text-green-500 mr-2">✓</span> Project Management
           </li>
         </ul>

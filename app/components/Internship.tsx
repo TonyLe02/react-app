@@ -12,38 +12,40 @@ const Internship = () => {
           Internship - at Swipload Technologies AS
         </h2>
 
-        <p>
-          This year marks the beginning of an exciting chapter in my career
-          journey as I start my internship at Swipload Technologies AS. Being
-          one of the few students selected to join their innovative team is both
-          an honor and a thrilling opportunity.
-        </p>
-        <br />
-        <p>
-          During this internship, I will be diving deep into the world of data
-          technology, working on real-world projects that challenge and enhance
-          my skills. From data analysis to software development, I am eager to
-          contribute to the team and learn from experienced professionals in the
-          field.
-        </p>
-        <br />
-        <p>
-          Swipload is a Norwegian tech company transforming logistics with a
-          digital platform that optimizes heavy transport assignments. By
-          connecting contractors and drivers, it reduces empty trips and
-          enhances efficiency, helping businesses save costs. Their platform
-          integrates CO2 calculations, enabling users to track and reduce
-          emissions, making transport more eco-friendly. Swipload's solutions
-          not only streamline logistics operations but also support
-          sustainability efforts in the industry. With a focus on greener and
-          smarter transportation, they are shaping the future of logistics.
-        </p>
-        <br />
-        <p>
-          Stay tuned for updates on my progress and experiences at Swipload
-          Technologies AS. This is just the beginning of an incredible journey,
-          and I am excited to share it with you all. 🚀
-        </p>
+        <div className="text-base md:text-lg">
+          <p>
+            This year marks the beginning of an exciting chapter in my career
+            journey as I start my internship at Swipload Technologies AS. Being
+            one of the few students selected to join their innovative team is both
+            an honor and a thrilling opportunity.
+          </p>
+          <br />
+          <p>
+            During this internship, I will be diving deep into the world of data
+            technology, working on real-world projects that challenge and enhance
+            my skills. From data analysis to software development, I am eager to
+            contribute to the team and learn from experienced professionals in the
+            field.
+          </p>
+          <br />
+          <p>
+            Swipload is a Norwegian tech company transforming logistics with a
+            digital platform that optimizes heavy transport assignments. By
+            connecting contractors and drivers, it reduces empty trips and
+            enhances efficiency, helping businesses save costs. Their platform
+            integrates CO2 calculations, enabling users to track and reduce
+            emissions, making transport more eco-friendly. Swipload's solutions
+            not only streamline logistics operations but also support
+            sustainability efforts in the industry. With a focus on greener and
+            smarter transportation, they are shaping the future of logistics.
+          </p>
+          <br />
+          <p>
+            Stay tuned for updates on my progress and experiences at Swipload
+            Technologies AS. This is just the beginning of an incredible journey,
+            and I am excited to share it with you all. 🚀
+          </p>
+        </div>
 
         <div className="container mx-auto py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -7,12 +7,17 @@ import Projects from "./Projects";
 import Experience from "./Experience";
 import Academic from "./Academic";
 import GithubStats from "./GithubStats";
+import Roombooking from "./Roombooking";
 
 const Discover = () => {
   const timelineData = [
     {
       title: "Today",
       content: <GithubStats />,
+    },
+    {
+      title: "October 2024",
+      content: <Roombooking />,
     },
     {
       title: "August 2024",

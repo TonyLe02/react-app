@@ -16,19 +16,20 @@ const Academic = () => {
           (Aug 2023 - 2025)
         </h2>
 
-        <p className="mb-4">
-          I've had the privilege of guiding new students through their initial
-          academic experiences, helping them navigate the challenges of
-          university life. My role as a Teaching Assistant has allowed me to
-          delve deeper into the fascinating world of data technology, supporting
-          research and learning in a vibrant academic environment.
-        </p>
-
-        <p className="mb-4">
-          These experiences have not only enriched my understanding, but also
-          honed my skills in communication, leadership, and collaboration,
-          preparing me for a future in technology and innovation.
-        </p>
+        <div className="text-base md:text-lg">
+          <p className="mb-4">
+            I've had the privilege of guiding new students through their initial
+            academic experiences, helping them navigate the challenges of
+            university life. My role as a Teaching Assistant has allowed me to
+            delve deeper into the fascinating world of data technology, supporting
+            research and learning in a vibrant academic environment.
+          </p>
+          <p className="mb-4">
+            These experiences have not only enriched my understanding, but also
+            honed my skills in communication, leadership, and collaboration,
+            preparing me for a future in technology and innovation.
+          </p>
+        </div>
 
         <div className="flex flex-wrap justify-center items-center mt-4">
           <img
@@ -43,20 +44,20 @@ const Academic = () => {
           Courses Assisted:
         </p>
         <ul>
-          <li>
-            <span className="text-green-500">✓</span> IS-100: The Role of
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> IS-100: The Role of
             Digitalization within Future Societies
           </li>
-          <li>
-            <span className="text-green-500">✓</span> IS-104: Digital
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> IS-104: Digital
             Interaction Design
           </li>
-          <li>
-            <span className="text-green-500">✓</span> IS-114: Introduction to
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> IS-114: Introduction to
             Co-creation in Information Systems
           </li>
-          <li>
-            <span className="text-green-500">✓</span> IS-105: Data
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> IS-105: Data
             Communications and Operating Systems
           </li>
         </ul>
@@ -65,20 +66,20 @@ const Academic = () => {
           Skills Learned:
         </p>
         <ul>
-          <li>
-            <span className="text-green-500">✓</span> Communication
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> Communication
           </li>
-          <li>
-            <span className="text-green-500">✓</span> Leadership
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> Leadership
           </li>
-          <li>
-            <span className="text-green-500">✓</span> Collaboration
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> Collaboration
           </li>
-          <li>
-            <span className="text-green-500">✓</span> Mentorship
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> Mentorship
           </li>
-          <li>
-            <span className="text-green-500">✓</span> Teaching
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> Teaching
           </li>
         </ul>
       </div>

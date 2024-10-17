@@ -21,7 +21,7 @@ const GithubStats = () => {
                 alt="Icons"
                 loading="lazy"
               />
-              <p className="text-white">
+              <p className="text-white text-base md:text-lg">
                 I am very enthusiastic about learning new technologies. Many
                 people have said that I look the happiest when I discover new
                 ways to build things, and that truly makes me happy. This is the

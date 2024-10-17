@@ -71,18 +71,18 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Discover My Tech Journey
         </h2>
         <div className="flex flex-col md:flex-row md:gap-10">
-          <div className="md:w-2/3">
-            <p className="text-white text-sm md:text-base max-w-sm mt-2">
+          <div className="text-base md:text-lg md:w-2/3">
+            <p className="text-white  max-w-sm mt-2">
               I’m Tony Nguyen Le, an aspiring developer passionate about data
               technology.
             </p>
-            <p className="text-white text-sm md:text-base max-w-sm mt-4">
+            <p className="text-white  max-w-sm mt-4">
               As a third-year IT and Information Systems student at the
               University of Agder, I’ve spent the last 3 years learning various
               technologies and understanding the importance of digitalization in
               a future society.
             </p>
-            <p className="text-white text-sm md:text-base max-w-sm mt-4">
+            <p className="text-white  max-w-sm mt-4">
               Here’s a glimpse into my journey as a student!
             </p>
           </div>
