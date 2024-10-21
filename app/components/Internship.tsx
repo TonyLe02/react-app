@@ -16,16 +16,16 @@ const Internship = () => {
           <p>
             This year marks the beginning of an exciting chapter in my career
             journey as I start my internship at Swipload Technologies AS. Being
-            one of the few students selected to join their innovative team is both
-            an honor and a thrilling opportunity.
+            one of the few students selected to join their innovative team is
+            both an honor and a thrilling opportunity.
           </p>
           <br />
           <p>
             During this internship, I will be diving deep into the world of data
-            technology, working on real-world projects that challenge and enhance
-            my skills. From data analysis to software development, I am eager to
-            contribute to the team and learn from experienced professionals in the
-            field.
+            technology, working on real-world projects that challenge and
+            enhance my skills. From data analysis to software development, I am
+            eager to contribute to the team and learn from experienced
+            professionals in the field.
           </p>
           <br />
           <p>
@@ -42,8 +42,8 @@ const Internship = () => {
           <br />
           <p>
             Stay tuned for updates on my progress and experiences at Swipload
-            Technologies AS. This is just the beginning of an incredible journey,
-            and I am excited to share it with you all. 🚀
+            Technologies AS. This is just the beginning of an incredible
+            journey, and I am excited to share it with you all. 🚀
           </p>
         </div>
 

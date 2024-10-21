@@ -21,8 +21,8 @@ const Academic = () => {
             I've had the privilege of guiding new students through their initial
             academic experiences, helping them navigate the challenges of
             university life. My role as a Teaching Assistant has allowed me to
-            delve deeper into the fascinating world of data technology, supporting
-            research and learning in a vibrant academic environment.
+            delve deeper into the fascinating world of data technology,
+            supporting research and learning in a vibrant academic environment.
           </p>
           <p className="mb-4">
             These experiences have not only enriched my understanding, but also
@@ -53,8 +53,8 @@ const Academic = () => {
             Interaction Design
           </li>
           <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> IS-114: Introduction to
-            Co-creation in Information Systems
+            <span className="text-green-500 mr-2">✓</span> IS-114: Introduction
+            to Co-creation in Information Systems
           </li>
           <li className="flex items-center md:text-xl">
             <span className="text-green-500 mr-2">✓</span> IS-105: Data

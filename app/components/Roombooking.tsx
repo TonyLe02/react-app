@@ -1,6 +1,5 @@
 /* eslint-disable */
 import React from "react";
-import Admin from "../images/AdminApp.png";
 import Welcome from "../images/WelcomeApp.png";
 import Search from "../images/SearchApp.png";
 import Register from "../images/RegisterApp.png";
@@ -46,6 +45,15 @@ const Roombooking = () => {
         </div>
 
         <div className="container mx-auto py-8">
+          <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
+            <video
+              className="w-full h-auto object-cover rounded-lg shadow-md"
+              controls
+            >
+              <source src="/videos/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <div className="w-full h-auto object-cover rounded-lg shadow-md">
             <img
               src={Welcome.src}
@@ -76,14 +84,6 @@ const Roombooking = () => {
             <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
               <img
                 src={Booking.src}
-                alt="Project Image 2"
-                className="w-full h-auto object-cover rounded-lg shadow-md"
-                aria-hidden="true"
-              />
-            </div>
-            <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
-              <img
-                src={Admin.src}
                 alt="Project Image 2"
                 className="w-full h-auto object-cover rounded-lg shadow-md"
                 aria-hidden="true"
