@@ -56,7 +56,7 @@ const Roombooking = () => {
                 height={1080}
               />
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
+            <div className="w-full h-auto object-cover rounded-lg shadow-md">
               <Image
                 src={Search.src}
                 alt="Project Image 2"
@@ -66,7 +66,7 @@ const Roombooking = () => {
                 height={1080}
               />
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
+            <div className="w-full h-auto object-cover rounded-lg shadow-md">
               <Image
                 src={Booking.src}
                 alt="Project Image 2"

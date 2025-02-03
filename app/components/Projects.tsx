@@ -69,7 +69,7 @@ const Projects = () => {
         {/* Image Section */}
         <div className="container mx-auto py-8">
           <div className="flex flex-wrap justify-center gap-6">
-            <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
+            <div className="w-full h-auto object-cover rounded-lg shadow-md">
               <Image
                 src={NøstedApp1.src}
                 alt="Project Image 1"
@@ -79,7 +79,7 @@ const Projects = () => {
                 height={1080}
               />
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
+            <div className="w-full h-auto object-cover rounded-lg shadow-md">
               <Image
                 src={NøstedApp2.src}
                 alt="Project Image 2"
