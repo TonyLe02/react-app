@@ -16,12 +16,11 @@ const Bachelorproject = () => {
         </h2>
         <div className="text-base md:text-lg">
           <p className="mb-4">
-            In my bachelor&apos;s thesis, we are developing a &ldquo;proof of
-            concept&ldquo; that leverages language models and vector databases
-            to improve the search functionality on Kartverket&apos;s portal,
-            Geonorge.no. The project aimed to make geospatial data retrieval
-            more precise and user-friendly, regardless of the user&apos;s
-            expertise.
+            In my bachelor&apos;s thesis, I am further developing a &quot;proof
+            of concept&quot; that leverages language models and vector databases
+            to enhance the search functionality on Kartverket&apos;s portal,
+            Geonorge.no. The project aims to make geospatial data retrieval more
+            precise and user-friendly, regardless of the user&apos;s expertise.
           </p>
         </div>
 
