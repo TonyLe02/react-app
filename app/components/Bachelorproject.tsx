@@ -41,8 +41,6 @@ const Bachelorproject = () => {
           </div>
         </div>
 
-        <div className="container mx-auto py-8"></div>
-
         <p className="text-xl md:text-3xl text-green-500 font-bold mt-4">
           Skills Learned:
         </p>
