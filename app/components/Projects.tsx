@@ -1,5 +1,8 @@
 /* eslint-disable */
 import React from "react";
+
+// Image
+import Image from "next/image";
 import Grade from "../images/grade-result.png";
 import NøstedApp1 from "../images/nøsted-app-1.png";
 import NøstedApp2 from "../images/nøsted-app-2.png";
@@ -52,11 +55,13 @@ const Projects = () => {
         </div>
         <div className="container mx-auto py-8">
           <div className="flex justify-center mb-4">
-            <img
+            <Image
               src={Grade.src}
               alt="Grade Result"
               className="w-full max-w-md h-auto object-cover rounded-lg shadow-md"
               aria-hidden="true"
+              width={1920}
+              height={1080}
             />
           </div>
         </div>
@@ -65,19 +70,23 @@ const Projects = () => {
         <div className="container mx-auto py-8">
           <div className="flex flex-wrap justify-center gap-6">
             <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
-              <img
+              <Image
                 src={NøstedApp1.src}
                 alt="Project Image 1"
                 className="w-full h-auto object-cover rounded-lg shadow-md"
                 aria-hidden="true"
+                width={1920}
+                height={1080}
               />
             </div>
             <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
-              <img
+              <Image
                 src={NøstedApp2.src}
                 alt="Project Image 2"
                 className="w-full h-auto object-cover rounded-lg shadow-md"
                 aria-hidden="true"
+                width={1920}
+                height={1080}
               />
             </div>
           </div>

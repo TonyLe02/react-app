@@ -1,8 +1,13 @@
 /* eslint-disable */
 import React from "react";
-import { LinkPreview } from "./ui/link-preview";
-import group from "../images/group-photo.png";
+
+// Image
+import Image from "next/image";
 import status from "../images/status.png";
+import group from "../images/group-photo.png";
+
+// UI components
+import { LinkPreview } from "./ui/link-preview";
 
 const Internship = () => {
   return (
@@ -50,19 +55,23 @@ const Internship = () => {
         <div className="container mx-auto py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <img
+              <Image
                 src={group.src}
                 alt="NITO Landsmøte"
                 className="w-full h-auto object-cover rounded-lg shadow-md"
                 aria-hidden="true"
+                width={1920}
+                height={1080}
               />
             </div>
             <div>
-              <img
+              <Image
                 src={status.src}
                 alt="NITO Stand"
                 className="w-full h-auto object-cover rounded-lg shadow-md"
                 aria-hidden="true"
+                width={1920}
+                height={1080}
               />
             </div>
           </div>

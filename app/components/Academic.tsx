@@ -1,7 +1,8 @@
-/* eslint-disable */
 // app/components/Academic.tsx
-
 import React from "react";
+
+// Image
+import Image from "next/image";
 import UiAPhoto from "../images/uia-photo.webp";
 
 const Academic = () => {
@@ -18,10 +19,10 @@ const Academic = () => {
 
         <div className="text-base md:text-lg">
           <p className="mb-4">
-            I've had the privilege of guiding new students through their initial
-            academic experiences, helping them navigate the challenges of
-            university life. My role as a Teaching Assistant has allowed me to
-            delve deeper into the fascinating world of data technology,
+            I&apos;ve had the privilege of guiding new students through their
+            initial academic experiences, helping them navigate the challenges
+            of university life. My role as a Teaching Assistant has allowed me
+            to delve deeper into the fascinating world of data technology,
             supporting research and learning in a vibrant academic environment.
           </p>
           <p className="mb-4">
@@ -32,11 +33,13 @@ const Academic = () => {
         </div>
 
         <div className="flex flex-wrap justify-center items-center mt-4">
-          <img
+          <Image
             src={UiAPhoto.src}
             alt="UiA"
             className="rounded-lg w-full mb-4 sm:mb-0"
             aria-hidden="true"
+            width={1920}
+            height={1080}
           />
         </div>
 

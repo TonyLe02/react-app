@@ -1,5 +1,4 @@
-/* eslint-disable */
-
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import ItemLayout from "./ItemLayout";
 
@@ -12,7 +11,7 @@ const GithubStats = () => {
             <div className="container mx-auto">
               <h2 className="text-sm md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-2 md:leading-snug">
                 I have gained experience with various technologies and here are
-                some of the tools and languages I've become familiar with:
+                some of the tools and languages I&apos;ve become familiar with:
               </h2>
 
               <img
@@ -26,10 +25,10 @@ const GithubStats = () => {
                 people have said that I look the happiest when I discover new
                 ways to build things, and that truly makes me happy. This is the
                 work I genuinely enjoy, and I could spend hours in an IDE
-                without noticing the time passing by. While I haven't learned
-                everything yet, I am a fast learner in the right environment,
-                and I am grateful for the opportunity to intern and learn even
-                more. 😊
+                without noticing the time passing by. While I haven&apos;t
+                learned everything yet, I am a fast learner in the right
+                environment, and I am grateful for the opportunity to intern and
+                learn even more. 😊
               </p>
             </div>
           </ItemLayout>

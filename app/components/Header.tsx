@@ -1,9 +1,15 @@
-/* eslint-disable */
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useEffect, useState } from "react";
+
+// Image
 import faviIcon from "../favicon.ico";
+
+// FontAwesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
+
+// UI components
 import { Cover } from "./ui/cover";
 
 const Header = () => {

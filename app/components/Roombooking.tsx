@@ -1,6 +1,6 @@
-/* eslint-disable */
 import React from "react";
-import Welcome from "../images/WelcomeApp.png";
+// Image
+import Image from "next/image";
 import Search from "../images/SearchApp.png";
 import Register from "../images/RegisterApp.png";
 import Booking from "../images/BookingApp.png";
@@ -45,48 +45,35 @@ const Roombooking = () => {
         </div>
 
         <div className="container mx-auto py-8">
-          <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
-            <video
-              className="w-full h-auto object-cover rounded-lg shadow-md"
-              controls
-            >
-              <source src="/videos/demo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className="w-full h-auto object-cover rounded-lg shadow-md">
-            <img
-              src={Welcome.src}
-              alt="Project Image 1"
-              className="w-full h-auto object-cover rounded-lg shadow-md"
-              aria-hidden="true"
-            />
-          </div>
-        </div>
-        <div className="container mx-auto py-8">
           <div className="flex flex-wrap justify-center gap-6">
             <div className="w-full h-auto object-cover rounded-lg shadow-md">
-              <img
+              <Image
                 src={Register.src}
                 alt="Project Image 1"
                 className="w-full h-auto object-cover rounded-lg shadow-md"
                 aria-hidden="true"
+                width={1920}
+                height={1080}
               />
             </div>
             <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
-              <img
+              <Image
                 src={Search.src}
                 alt="Project Image 2"
                 className="w-full h-auto object-cover rounded-lg shadow-md"
                 aria-hidden="true"
+                width={1920}
+                height={1080}
               />
             </div>
             <div className="w-full sm:w-1/2 md:w-1/1 lg:w-full px-2 mb-4">
-              <img
+              <Image
                 src={Booking.src}
                 alt="Project Image 2"
                 className="w-full h-auto object-cover rounded-lg shadow-md"
                 aria-hidden="true"
+                width={1920}
+                height={1080}
               />
             </div>
           </div>
