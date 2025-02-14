@@ -3,7 +3,7 @@ import React from "react";
 
 // Image
 import Image from "next/image";
-import profilePicture from "../images/profile-picture.jpg";
+import profilePicture from "../images/profile.picture.jpg";
 
 // UI Components
 import { ShootingStars } from "./ui/shooting-stars";
