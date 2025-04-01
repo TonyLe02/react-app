@@ -16,16 +16,16 @@ const Bachelorproject = () => {
           (Jan 2025 - 2025)
         </h2>
         <div className="text-base md:text-lg">
-          <p className="mb-4">
-            For my bachelor&apos;s thesis, together with Kartverket og
-            Kristiansand Kommune, I developed GeoGPT, an AI chatbot that reads
-            thousands of datasets from Geonorge.no and interacts with maps. The
-            application leverages language models and vector databases to
-            enhance geospatial data retrieval, making it more precise and
-            user-friendly regardless of the user&apos;s expertise. Our MVP has
-            been deployed for beta testing, demonstrating the practical
-            application of AI in geospatial information systems.
-          </p>
+            <p className="mb-4">
+            For my bachelor&apos;s thesis, in collaboration with Kartverket and
+            Kristiansand Municipality, I developed GeoGPT, an AI chatbot capable of
+            processing thousands of datasets from Geonorge.no and interacting
+            with maps. The application integrates language models and vector
+            databases to improve geospatial data retrieval, ensuring precision
+            and accessibility for users of all expertise levels. Our MVP has
+            been successfully deployed for beta testing, showcasing the
+            potential of AI in advancing geospatial information systems.
+            </p>
         </div>
 
         <div className="container mx-auto py-8">
