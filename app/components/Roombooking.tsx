@@ -46,16 +46,7 @@ const Roombooking = () => {
 
         <div className="container mx-auto py-8">
           <div className="flex flex-wrap justify-center gap-6">
-            <div className="w-full h-auto object-cover rounded-lg shadow-md">
-              <Image
-                src={Register.src}
-                alt="Project Image 1"
-                className="w-full h-auto object-cover rounded-lg shadow-md"
-                aria-hidden="true"
-                width={1920}
-                height={1080}
-              />
-            </div>
+            
             <div className="w-full h-auto object-cover rounded-lg shadow-md">
               <Image
                 src={Search.src}
@@ -66,16 +57,7 @@ const Roombooking = () => {
                 height={1080}
               />
             </div>
-            <div className="w-full h-auto object-cover rounded-lg shadow-md">
-              <Image
-                src={Booking.src}
-                alt="Project Image 2"
-                className="w-full h-auto object-cover rounded-lg shadow-md"
-                aria-hidden="true"
-                width={1920}
-                height={1080}
-              />
-            </div>
+            
           </div>
         </div>
 

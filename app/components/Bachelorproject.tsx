@@ -16,21 +16,23 @@ const Bachelorproject = () => {
         </h2>
         <div className="text-base md:text-lg">
           <p className="mb-4">
-            In my bachelor&apos;s thesis, I am further developing a &quot;proof
-            of concept&quot; that leverages language models and vector databases
-            to enhance the search functionality on Kartverket&apos;s portal,
-            Geonorge.no. The project aims to make geospatial data retrieval more
-            precise and user-friendly, regardless of the user&apos;s expertise.
+            For my bachelor&apos;s thesis, I developed GeoGPT, an AI chatbot
+            that reads thousands of datasets from Geonorge.no and interacts with
+            maps. The application leverages language models and vector databases
+            to enhance geospatial data retrieval, making it more precise and
+            user-friendly regardless of the user&apos;s expertise. Our MVP has
+            been deployed for beta testing, demonstrating the practical
+            application of AI in geospatial information systems.
           </p>
         </div>
 
         <div className="container mx-auto py-8">
           <div className="flex flex-wrap justify-center gap-6">
-            <div className="w-full h-auto object-cover rounded-lg shadow-md">
+            <div className="w-full h-auto object-cover rounded-lg">
               <Image
                 src={KartAI.src}
                 alt="Project Image 2"
-                className="w-full h-auto object-cover rounded-lg shadow-md"
+                className="w-full lg:w-1/2 h-auto object-cover rounded-lg shadow-md"
                 aria-hidden="true"
                 width={1920}
                 height={1080}
