@@ -16,7 +16,7 @@ const Bachelorproject = () => {
         </h2>
         <div className="text-base md:text-lg">
           <p className="mb-4">
-            For my bachelor&apos;s thesis, I developed GeoGPT, an AI chatbot
+            For my bachelor&apos;s thesis, together with Kartverket og Kristiansand Kommune, I developed GeoGPT, an AI chatbot
             that reads thousands of datasets from Geonorge.no and interacts with
             maps. The application leverages language models and vector databases
             to enhance geospatial data retrieval, making it more precise and
@@ -44,25 +44,21 @@ const Bachelorproject = () => {
         <p className="text-xl md:text-3xl text-green-500 font-bold mt-4">
           Skills Learned:
         </p>
-        <ul>
+        <ul className="mt-2">
           <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> User Interface Design
+            <span className="text-green-500 mr-2">✓</span> UI/UX Design
           </li>
           <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> Frontend Development:
-            Next.js, TypeScript, HTML, and CSS
+            <span className="text-green-500 mr-2">✓</span> Next.js & TypeScript
           </li>
           <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> Vector Database:
-            PostgreSQL with the Pgvector extension
+            <span className="text-green-500 mr-2">✓</span> PostgreSQL with Pgvector
           </li>
           <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> Data Processing:
-            Python, Pandas, and Regex
+            <span className="text-green-500 mr-2">✓</span> Python/LLM Data Processing
           </li>
           <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> Containerization:
-            Docker
+            <span className="text-green-500 mr-2">✓</span> Docker
           </li>
         </ul>
       </div>
