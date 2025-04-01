@@ -2,8 +2,6 @@ import React from "react";
 // Image
 import Image from "next/image";
 import Search from "../images/SearchApp.png";
-import Register from "../images/RegisterApp.png";
-import Booking from "../images/BookingApp.png";
 
 const Roombooking = () => {
   return (
