@@ -10,7 +10,7 @@ const Bachelorproject = () => {
     <section id="projects" className="text-white p-0 anchor-offset">
       <div className="container mx-auto">
         <h2 className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500 mb-2 md:leading-snug">
-          Bachelor Project: Enhancing GeoGPT 3.0 with KartAI
+          Bachelor Project: Enhancing GeoGPT with KartAi
         </h2>
         <h2 className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500 mb-2 md:leading-snug">
           (Jan 2025 - 2025)
