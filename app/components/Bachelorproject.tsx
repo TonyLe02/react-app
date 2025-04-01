@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import Image from "next/image";
 
@@ -16,10 +17,11 @@ const Bachelorproject = () => {
         </h2>
         <div className="text-base md:text-lg">
           <p className="mb-4">
-            For my bachelor&apos;s thesis, together with Kartverket og Kristiansand Kommune, I developed GeoGPT, an AI chatbot
-            that reads thousands of datasets from Geonorge.no and interacts with
-            maps. The application leverages language models and vector databases
-            to enhance geospatial data retrieval, making it more precise and
+            For my bachelor&apos;s thesis, together with Kartverket og
+            Kristiansand Kommune, I developed GeoGPT, an AI chatbot that reads
+            thousands of datasets from Geonorge.no and interacts with maps. The
+            application leverages language models and vector databases to
+            enhance geospatial data retrieval, making it more precise and
             user-friendly regardless of the user&apos;s expertise. Our MVP has
             been deployed for beta testing, demonstrating the practical
             application of AI in geospatial information systems.
@@ -52,10 +54,12 @@ const Bachelorproject = () => {
             <span className="text-green-500 mr-2">✓</span> Next.js & TypeScript
           </li>
           <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> PostgreSQL with Pgvector
+            <span className="text-green-500 mr-2">✓</span> PostgreSQL with
+            Pgvector
           </li>
           <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> Python/LLM Data Processing
+            <span className="text-green-500 mr-2">✓</span> Python/LLM Data
+            Processing
           </li>
           <li className="flex items-center md:text-xl">
             <span className="text-green-500 mr-2">✓</span> Docker
