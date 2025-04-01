@@ -18,7 +18,7 @@ const Bachelorproject = () => {
         <div className="text-base md:text-lg">
             <p className="mb-4">
             For my bachelor&apos;s thesis, in collaboration with Kartverket and
-            Kristiansand Municipality, I developed GeoGPT, an AI chatbot capable of
+            Kristiansand Kommune, I developed GeoGPT, an AI chatbot capable of
             processing thousands of datasets from Geonorge.no and interacting
             with maps. The application integrates language models and vector
             databases to improve geospatial data retrieval, ensuring precision
