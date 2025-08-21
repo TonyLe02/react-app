@@ -4,6 +4,7 @@ import Swipload from "../images/swipload-logo.png";
 import Nøsted from "../images/nøsted-logo.png";
 import NITO from "../images/nito-logo.png";
 import UiA from "../images/uia-logo.png";
+import EasyLogo from "../images/EasyLogo.png";
 
 const History = () => {
   return (
@@ -11,7 +12,20 @@ const History = () => {
       <div className="container mx-auto">
         <h2 className="text-4xl mb-4">Work History</h2>
         <ul className="container mx-auto flex items-center justify-evenly">
-          <li className="w-1/5">
+          <li className="w-1/6">
+            <a
+              href="https://easyeiendom.no/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={EasyLogo.src}
+                alt="Easy Eiendom AS Logo"
+                className="object-contain w-full h-auto mb-12 max-h-20"
+              />
+            </a>
+          </li>
+          <li className="w-1/6">
             <a
               href="https://www.swipload.com/"
               target="_blank"

@@ -114,7 +114,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="flex justify-start pt-10 md:pt-40 md:gap-10"
+            className={`flex justify-start md:gap-10 ${
+              index === 0 ? "pt-1 md:pt-2" : "pt-10 md:pt-40"
+            }`}
           >
             <div
               className="sticky flex flex-col md:flex-row z-40 items-center"

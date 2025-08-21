@@ -9,11 +9,16 @@ import Academic from "./Academic";
 import GithubStats from "./GithubStats";
 import Roombooking from "./Roombooking";
 import Bachelorproject from "./Bachelorproject";
+import EasyEiendom from "./EasyEiendom";
 
 const Discover = () => {
   const timelineData = [
     {
       title: "Today",
+      content: <EasyEiendom />,
+    },
+    {
+      title: "GitHub Stats",
       content: <GithubStats />,
     },
     {
