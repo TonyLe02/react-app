@@ -11,26 +11,26 @@ const EasyEiendom = () => {
 
   const skills = [
     "C# & .NET",
-    "Python", 
+    "Python",
     "Vue.js & Nuxt.js",
     "Fullstack Development",
     "API Integration",
     "UI/UX Design Solutions",
-    "AI Implementation Exploration"
+    "AI Implementation Exploration",
   ];
 
   return (
-    <motion.section 
+    <motion.section
       ref={ref}
-      id="easy-eiendom" 
+      id="easy-eiendom"
       className="text-white p-0 anchor-offset"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.6 }}
     >
       <div className="container mx-auto">
-        <motion.h2 
-          className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-green-500 mb-2 md:leading-snug"
+        <motion.h2
+          className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-red-500 to-red-600 mb-2 md:leading-snug"
           initial={{ y: -30, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : { y: -30, opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -42,87 +42,88 @@ const EasyEiendom = () => {
             transition={{
               duration: 3,
               repeat: Infinity,
-              ease: "easeInOut"
+              ease: "easeInOut",
             }}
           >
             Software Developer - Easy Eiendom AS
           </motion.span>
         </motion.h2>
 
-        <motion.h3 
-          className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-green-500 mb-2 md:leading-snug"
+        <motion.h3
+          className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-red-500 to-red-600 mb-2 md:leading-snug"
           initial={{ x: -50, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           Part-time Developer (Aug 2025 - Present)
         </motion.h3>
-        
 
         <div className="text-base md:text-lg">
-          <motion.p 
+          <motion.p
             className="mb-4"
             initial={{ y: 20, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            I&apos;m currently working part-time as a developer at Easy Eiendom AS, where I focus on
-            fullstack development to make real estate data more accessible across Norway. 
-            This opportunity grew from my successful summer internship with the company.
+            I&apos;m currently working part-time as a developer at Easy Eiendom
+            AS, where I focus on fullstack development to make real estate data
+            more accessible across Norway. This opportunity grew from my
+            successful summer internship with the company.
           </motion.p>
-          
-          <motion.p 
+
+          <motion.p
             className="mb-4"
             initial={{ y: 20, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.7 }}
           >
-            <motion.strong 
-              className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-green-500"
-            >
+            <motion.strong className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-500">
               What I&apos;m doing now:
-            </motion.strong><br />
-            I work on both frontend and backend development in a collaborative team environment. 
-            We&apos;re building innovative solutions that make complex real estate data easy to
-            understand and use for both everyday consumers and industry professionals.
+            </motion.strong>
+            <br />I work on both frontend and backend development in a
+            collaborative team environment. We&apos;re building innovative
+            solutions that make complex real estate data easy to understand and
+            use for both everyday consumers and industry professionals.
           </motion.p>
-          
-          <motion.p 
+
+          <motion.p
             className="mb-4"
             initial={{ y: 20, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <motion.strong 
-              className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500"
-            >
+            <motion.strong className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-500">
               How it all started (Summer Intern: Jun - Aug 2025):
-            </motion.strong><br />
-            During my summer internship, I dove into design solutions, API integrations, 
-            and explored how AI could improve our platform. The experience was incredible - 
-            working in such a fast-paced PropTech environment taught me so much and 
-            ultimately led to my current role.
+            </motion.strong>
+            <br />
+            During my summer internship, I dove into design solutions, API
+            integrations, and explored how AI could improve our platform. The
+            experience was incredible - working in such a fast-paced PropTech
+            environment taught me so much and ultimately led to my current role.
           </motion.p>
-          
-          <motion.p 
+
+          <motion.p
             className="mb-4"
             initial={{ y: 20, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
           >
-            Easy Eiendom AS is revolutionizing how Norwegians access real estate information. 
-            We&apos;re breaking down barriers between complex property data and user-friendly experiences, 
-            making real estate insights available to everyone - whether you&apos;re buying your first home 
-            or you&apos;re a seasoned industry professional.
+            Easy Eiendom AS is revolutionizing how Norwegians access real estate
+            information. We&apos;re breaking down barriers between complex
+            property data and user-friendly experiences, making real estate
+            insights available to everyone - whether you&apos;re buying your
+            first home or you&apos;re a seasoned industry professional.
           </motion.p>
         </div>
 
         <div className="container mx-auto py-8">
           <div className="flex flex-col md:flex-row gap-6 items-center">
-            <motion.div 
+            <motion.div
               className="w-full md:w-1/3"
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+              animate={
+                isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+              }
               transition={{ duration: 0.8, delay: 1.0 }}
             >
               <div className="rounded-lg overflow-hidden">
@@ -136,10 +137,12 @@ const EasyEiendom = () => {
                 />
               </div>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="w-full md:w-2/3"
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+              animate={
+                isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+              }
               transition={{ duration: 0.8, delay: 1.1 }}
             >
               <div className="rounded-lg overflow-hidden">
@@ -156,7 +159,7 @@ const EasyEiendom = () => {
           </div>
         </div>
 
-        <motion.p 
+        <motion.p
           className="text-xl md:text-3xl text-green-500 font-bold mt-4"
           initial={{ y: -20, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : { y: -20, opacity: 0 }}
@@ -164,17 +167,17 @@ const EasyEiendom = () => {
         >
           Technologies & Skills:
         </motion.p>
-        
+
         <ul className="mt-2">
           {skills.map((skill, index) => (
-            <motion.li 
+            <motion.li
               key={skill}
               className="flex items-center md:text-xl"
               initial={{ x: -30, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
-              transition={{ duration: 0.4, delay: 1.3 + (index * 0.1) }}
+              transition={{ duration: 0.4, delay: 1.3 + index * 0.1 }}
             >
-              <span className="text-green-500 mr-2">✓</span> 
+              <span className="text-green-500 mr-2">✓</span>
               <span>{skill}</span>
             </motion.li>
           ))}
