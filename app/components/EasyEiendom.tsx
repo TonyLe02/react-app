@@ -93,7 +93,7 @@ const EasyEiendom = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             <motion.strong className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500">
-              How it all started: (Jun - Aug 2025):
+              How it all started:
             </motion.strong>
             <br />
             While working on my bachelor&apos;s degree, one of the founders, CFO
