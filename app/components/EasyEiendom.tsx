@@ -55,7 +55,7 @@ const EasyEiendom = () => {
           animate={isInView ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Software Developer (Aug 2025 - Present)
+          (Aug 2025 - Present)
         </motion.h3>
 
         <div className="text-base md:text-lg">
@@ -93,13 +93,16 @@ const EasyEiendom = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             <motion.strong className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500">
-              How it all started (Summer Intern: Jun - Aug 2025):
+              How it all started: (Jun - Aug 2025):
             </motion.strong>
             <br />
-            During my summer internship, I dove into design solutions, API
-            integrations, and explored how AI could improve our platform. The
-            experience was incredible - working in such a fast-paced PropTech
-            environment taught me so much and ultimately led to my current role.
+            While working on my bachelor&apos;s degree, one of the founders, CFO
+            found my project on LinkedIn and saw it was highly relevant to their
+            work. That connection quickly led to an internship opportunity at
+            Easy Eiendom. I jumped in, tackling design solutions, API
+            integrations, and exploring AI enhancements for the platform. The
+            fast-paced PropTech environment was a fantastic learning experience
+            and set the stage for my current role.
           </motion.p>
 
           <motion.p
