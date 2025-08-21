@@ -22,32 +22,31 @@ const EasyEiendom = () => {
 
         <div className="text-base md:text-lg">
           <p className="mb-4">
-            Currently working part-time as a developer at Easy Eiendom AS, focusing on 
-            fullstack development to simplify access to real estate data in Norway. 
-            This role builds upon my successful summer internship experience at the company.
+            I'm currently working part-time as a developer at Easy Eiendom AS, where I focus on 
+            fullstack development to make real estate data more accessible across Norway. 
+            This opportunity grew from my successful summer internship with the company.
           </p>
           
           <p className="mb-4">
-            <strong>Current Role (Part-time Developer):</strong><br />
-            Contributing to both frontend and backend functionality development in a 
-            collaborative, cross-functional team environment. Working on innovative 
-            solutions that make real estate data more accessible and user-friendly 
-            for Norwegian consumers and professionals.
+            <strong className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-green-500">What I'm doing now:</strong><br />
+            I work on both frontend and backend development in a collaborative team environment. 
+            We're building innovative solutions that make complex real estate data easy to 
+            understand and use for both everyday consumers and industry professionals.
           </p>
           
           <p className="mb-4">
-            <strong>Summer Internship Experience:</strong><br />
-            During my summer internship, I focused on design solutions, API integration, 
-            and exploring AI implementation possibilities. This experience provided 
-            valuable hands-on experience in a fast-paced PropTech environment and 
-            led to my current part-time position.
+            <strong className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500">How it all started:</strong><br />
+            During my summer internship, I dove into design solutions, API integrations, 
+            and explored how AI could improve our platform. The experience was incredible - 
+            working in such a fast-paced PropTech environment taught me so much and 
+            ultimately led to my current role.
           </p>
           
           <p className="mb-4">
-            Easy Eiendom AS is a Norwegian PropTech company dedicated to democratizing 
-            access to real estate information. The company develops innovative solutions 
-            that bridge the gap between complex property data and user-friendly interfaces, 
-            making real estate insights accessible to everyone in Norway.
+            Easy Eiendom AS is revolutionizing how Norwegians access real estate information. 
+            We're breaking down barriers between complex property data and user-friendly experiences, 
+            making real estate insights available to everyone - whether you're buying your first home 
+            or you're a seasoned industry professional.
           </p>
         </div>
 
@@ -81,7 +80,13 @@ const EasyEiendom = () => {
         </p>
         <ul className="mt-2">
           <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> C# & .NET Framework
+            <span className="text-green-500 mr-2">✓</span> C# & .NET
+          </li>
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> Python
+          </li>
+          <li className="flex items-center md:text-xl">
+            <span className="text-green-500 mr-2">✓</span> Vue.js & Nuxt.js
           </li>
           <li className="flex items-center md:text-xl">
             <span className="text-green-500 mr-2">✓</span> Fullstack Development
@@ -94,12 +99,6 @@ const EasyEiendom = () => {
           </li>
           <li className="flex items-center md:text-xl">
             <span className="text-green-500 mr-2">✓</span> AI Implementation Exploration
-          </li>
-          <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> PropTech Industry Knowledge
-          </li>
-          <li className="flex items-center md:text-xl">
-            <span className="text-green-500 mr-2">✓</span> Cross-functional Team Collaboration
           </li>
         </ul>
       </div>
