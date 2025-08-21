@@ -30,7 +30,7 @@ const EasyEiendom = () => {
     >
       <div className="container mx-auto">
         <motion.h2
-          className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-red-500 to-red-600 mb-2 md:leading-snug"
+          className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-2 md:leading-snug"
           initial={{ y: -30, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : { y: -30, opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -50,12 +50,12 @@ const EasyEiendom = () => {
         </motion.h2>
 
         <motion.h3
-          className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-red-500 to-red-600 mb-2 md:leading-snug"
+          className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-2 md:leading-snug"
           initial={{ x: -50, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Part-time Developer (Aug 2025 - Present)
+          Software Developer (Aug 2025 - Present)
         </motion.h3>
 
         <div className="text-base md:text-lg">
@@ -65,10 +65,10 @@ const EasyEiendom = () => {
             animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            I&apos;m currently working part-time as a developer at Easy Eiendom
-            AS, where I focus on fullstack development to make real estate data
-            more accessible across Norway. This opportunity grew from my
-            successful summer internship with the company.
+            I&apos;m working as a software developer at Easy Eiendom AS, where I
+            focus on fullstack development to make real estate data more
+            accessible across Norway. This opportunity grew from my successful
+            summer internship with the company.
           </motion.p>
 
           <motion.p
@@ -77,7 +77,7 @@ const EasyEiendom = () => {
             animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.7 }}
           >
-            <motion.strong className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-500">
+            <motion.strong className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500">
               What I&apos;m doing now:
             </motion.strong>
             <br />I work on both frontend and backend development in a
@@ -92,7 +92,7 @@ const EasyEiendom = () => {
             animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <motion.strong className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-500">
+            <motion.strong className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500">
               How it all started (Summer Intern: Jun - Aug 2025):
             </motion.strong>
             <br />
