@@ -21,42 +21,37 @@ const EasyEiendom = () => {
 
   return (
     <motion.section
-      ref={ref}
-      id="easy-eiendom"
-      className="text-white p-0 anchor-offset"
-      initial={{ opacity: 0 }}
-      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 0.6 }}
+  ref={ref}
+  id="easy-eiendom"
+  className="text-white p-0 anchor-offset"
+  initial={{ opacity: 0 }}
+  animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+  transition={{ duration: 0.6 }}
+>
+  <div className="container mx-auto">
+    <motion.h2
+      className="text-xl md:text-3xl font-bold mb-2 md:leading-snug"
+      initial={{ y: -30, opacity: 0 }}
+      animate={isInView ? { y: 0, opacity: 1 } : { y: -30, opacity: 0 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
     >
-      <div className="container mx-auto">
-        <motion.h2
-          className="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-2 md:leading-snug"
-          initial={{ y: -30, opacity: 0 }}
-          animate={isInView ? { y: 0, opacity: 1 } : { y: -30, opacity: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <motion.span
-            animate={{
-              y: [0, -5, 0],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          >
-            Software Developer - Easy Eiendom AS
-          </motion.span>
-        </motion.h2>
+      <motion.span
+        className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500"
+        animate={{ y: [0, -5, 0] }}
+        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+      >
+        Software Developer - Easy Eiendom AS
+      </motion.span>
+    </motion.h2>
 
-        <motion.h3
-          className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-2 md:leading-snug"
-          initial={{ x: -50, opacity: 0 }}
-          animate={isInView ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          (Aug 2025 - Present)
-        </motion.h3>
+    <motion.h3
+      className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-yellow-600 to-red-500 mb-2 md:leading-snug"
+      initial={{ x: -50, opacity: 0 }}
+      animate={isInView ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
+      transition={{ duration: 0.6, delay: 0.4 }}
+    >
+      (Aug 2025 - Present)
+    </motion.h3>
 
         <div className="text-base md:text-lg">
           <motion.p
