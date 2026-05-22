@@ -1,11 +1,14 @@
 /* eslint-disable */
 // app/components/Footer.tsx
+"use client";
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" text-white text-center p-4">
-      <p>© 2024 Tony Nguyen Le. All rights reserved.</p>
+    <footer className="relative mt-20 py-10">
+      <p className="text-xs text-white/40 text-center">
+        © {new Date().getFullYear()} Tony Nguyen Le
+      </p>
     </footer>
   );
 };

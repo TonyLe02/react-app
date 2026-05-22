@@ -6,52 +6,24 @@ import Internship from "./Internship";
 import Projects from "./Projects";
 import Experience from "./Experience";
 import Academic from "./Academic";
-import GithubStats from "./GithubStats";
 import Roombooking from "./Roombooking";
 import Bachelorproject from "./Bachelorproject";
 import EasyEiendom from "./EasyEiendom";
+import WorkoutTracker from "./WorkoutTracker";
 
 const Discover = () => {
   const timelineData = [
-    {
-      title: "Today",
-      content: <EasyEiendom />,
-    },
-    {
-      title: "GitHub Stats",
-      content: <GithubStats />,
-    },
-    {
-      title: "January 2025",
-      content: <Bachelorproject />,
-    },
-    {
-      title: "October 2024",
-      content: <Roombooking />,
-    },
-    {
-      title: "August 2024",
-      content: <Internship />,
-    },
-    {
-      title: "August 2023",
-      content: <Projects />,
-    },
-    {
-      title: "August 2023",
-      content: <Academic />,
-    },
-    {
-      title: "March 2023",
-      content: <Experience />,
-    },
+    { title: "Now", content: <EasyEiendom /> },
+    { title: "2026", content: <WorkoutTracker /> },
+    { title: "2025", content: <Bachelorproject /> },
+    { title: "2024", content: <Roombooking /> },
+    { title: "2024", content: <Internship /> },
+    { title: "2023", content: <Projects /> },
+    { title: "2023", content: <Academic /> },
+    { title: "2022", content: <Experience /> },
   ];
 
-  return (
-    <div>
-      <Timeline data={timelineData} />
-    </div>
-  );
+  return <Timeline data={timelineData} />;
 };
 
 export default Discover;

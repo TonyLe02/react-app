@@ -1,123 +1,156 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-// Image
-import faviIcon from "../favicon.ico";
+const NAV_ITEMS = [
+  { label: "About", href: "#about" },
+  { label: "Timeline", href: "#work" },
+] as const;
 
-// FontAwesome icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
+const SOCIAL_ITEMS = [
+  {
+    label: "GitHub",
+    href: "https://github.com/TonyLe02",
+    icon: <FaGithub size={16} />,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/tonynl02",
+    icon: <FaLinkedin size={16} />,
+  },
+] as const;
 
-// UI components
-import { Cover } from "./ui/cover";
+const Mark = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <rect x="3" y="3" width="9" height="9" rx="2" fill="currentColor" opacity="0.85" />
+    <rect x="12" y="12" width="9" height="9" rx="2" fill="currentColor" opacity="0.55" />
+  </svg>
+);
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  /* Back to top button */
-  useEffect(() => {
-    // Show or hide the button based on scroll position
-    const handleScroll = () => {
-      const myBtn = document.getElementById("myBtn");
-      if (window.scrollY > 300) {
-        myBtn?.classList.remove("hidden");
-      } else {
-        myBtn?.classList.add("hidden");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const topFunction = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const [open, setOpen] = useState(false);
 
   return (
-    <>
-      <nav className="sticky top-0 z-50 w-full border-gray-200 bg-white shadow">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="" className="flex items-center">
-            <img
-              src={faviIcon.src}
-              alt="LeWorks Logo"
-              className="h-6 mr-2 sm:h-9"
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-800">
-              LeWorks
-            </span>
-          </a>
-          <div className="flex md:order-2">
-            <button
-              type="button"
-              onClick={toggleMenu}
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-              aria-controls="navbar-default"
-              aria-expanded={isMenuOpen}
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-          </div>
-          <div
-            className={`w-full md:block md:w-auto ${
-              isMenuOpen ? "" : "hidden"
-            }`}
-            id="navbar-default"
+    <header className="fixed top-3 sm:top-4 inset-x-0 z-50 px-3 pointer-events-none">
+      <div className="mx-auto w-fit pointer-events-auto">
+        {/* Single floating pill — same shape always */}
+        <div className="flex items-center gap-1 rounded-full bg-black/30 backdrop-blur-xl px-1.5 py-1">
+          <span
+            aria-hidden="true"
+            className="shrink-0 inline-flex items-center justify-center w-9 h-9 text-white/80"
           >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-              {["About", "Contact", "Internship", "Projects", "Experience"].map(
-                (item) => (
-                  <li key={item}>
-                    <a
-                      href={`#${item.toLowerCase()}`}
-                      className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 text-gray-900 hover:text-orange-500"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-        </div>
-      </nav>
+            <Mark />
+          </span>
 
-      {/* Back to top button */}
-      <button
-        onClick={topFunction}
-        id="myBtn"
-        title="Go to top"
-        className="hidden fixed bottom-8 right-8 z-50 cursor-pointer p-3 rounded-full text-lg bg-[#121212] border-2 border-yellow-500 hover:border-yellow-600 items-center space-x-2"
-      >
-        <Cover>
-          <FontAwesomeIcon icon={faRocket} className="text-yellow-500" />
-        </Cover>
-      </button>
-    </>
+          {/* Desktop nav + socials */}
+          <nav className="hidden md:flex items-center gap-0.5">
+            {NAV_ITEMS.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="px-4 py-1.5 rounded-full text-sm font-medium text-white/75 hover:text-white hover:bg-white/10 transition-colors"
+              >
+                {item.label}
+              </a>
+            ))}
+            {SOCIAL_ITEMS.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={s.label}
+                title={s.label}
+                className="inline-flex items-center justify-center w-9 h-9 rounded-full text-white/75 hover:text-white hover:bg-white/10 transition-colors"
+              >
+                {s.icon}
+              </a>
+            ))}
+          </nav>
+
+          {/* Primary CTA — always visible on desktop */}
+          <a
+            href="#contact"
+            className="hidden md:inline-flex items-center h-9 px-4 ml-1 rounded-full bg-white text-background text-sm font-medium hover:opacity-90 transition-opacity"
+          >
+            Contact
+          </a>
+
+          {/* Mobile hamburger */}
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Toggle menu"
+            aria-expanded={open}
+            className="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              {open ? (
+                <>
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </>
+              ) : (
+                <>
+                  <path d="M4 7h16" />
+                  <path d="M4 12h16" />
+                  <path d="M4 17h16" />
+                </>
+              )}
+            </svg>
+          </button>
+        </div>
+
+        {/* Mobile sheet */}
+        {open && (
+          <div className="md:hidden mt-2 mx-auto max-w-xs rounded-2xl bg-black/30 backdrop-blur-xl p-2">
+            <nav className="flex flex-col">
+              {NAV_ITEMS.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="px-3 py-2.5 rounded-xl text-sm font-medium text-white/80 hover:text-white hover:bg-white/10"
+                >
+                  {item.label}
+                </a>
+              ))}
+              <a
+                href="#contact"
+                onClick={() => setOpen(false)}
+                className="mt-1 inline-flex items-center justify-center h-10 rounded-xl bg-white text-background text-sm font-medium"
+              >
+                Contact
+              </a>
+            </nav>
+            <div className="flex items-center gap-1 mt-2 px-1">
+              {SOCIAL_ITEMS.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="inline-flex items-center justify-center w-9 h-9 rounded-xl text-white/75 hover:text-white hover:bg-white/10 transition-colors"
+                >
+                  {s.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </header>
   );
 };
 
