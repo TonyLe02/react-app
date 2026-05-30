@@ -21,15 +21,15 @@ export default function RootLayout() {
   return (
     <html lang="en" className="dark">
       <body className="font-sans bg-background text-white antialiased">
-        {/* Fixed sunset backdrop */}
+        {/* Fixed sand-gradient backdrop */}
         <div
           className="fixed inset-0 bg-cover bg-center bg-no-repeat pointer-events-none"
-          style={{ backgroundImage: "url(/background.jpg)" }}
+          style={{ backgroundImage: "url(/hero-sand.png)" }}
           aria-hidden="true"
         />
         {/* Tinted overlay for readability */}
         <div
-          className="fixed inset-0 bg-background/65 pointer-events-none"
+          className="fixed inset-0 bg-background/55 pointer-events-none"
           aria-hidden="true"
         />
 

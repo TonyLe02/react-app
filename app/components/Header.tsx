@@ -1,6 +1,35 @@
 "use client";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+
+// Ladder animation — the sheet staggers its children, each "rung" drops in from above
+const sheetVariants = {
+  hidden: { opacity: 0, y: -8, scale: 0.98 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.2,
+      ease: [0.22, 1, 0.36, 1],
+      staggerChildren: 0.07,
+      delayChildren: 0.05,
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -8,
+    scale: 0.98,
+    transition: { duration: 0.15, staggerChildren: 0.04, staggerDirection: -1 },
+  },
+};
+
+const rungVariants = {
+  hidden: { opacity: 0, y: -12 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.28, ease: [0.22, 1, 0.36, 1] } },
+  exit: { opacity: 0, y: -8, transition: { duration: 0.12 } },
+};
 
 const NAV_ITEMS = [
   { label: "About", href: "#about" },
@@ -111,44 +140,59 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile sheet */}
-        {open && (
-          <div className="md:hidden mt-2 mx-auto max-w-xs rounded-2xl bg-black/30 backdrop-blur-xl p-2">
-            <nav className="flex flex-col">
-              {NAV_ITEMS.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
+        {/* Mobile sheet — ladder animation */}
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              key="mobile-sheet"
+              variants={sheetVariants}
+              initial="hidden"
+              animate="show"
+              exit="exit"
+              style={{ transformOrigin: "top center" }}
+              className="md:hidden mt-2 mx-auto w-48 rounded-2xl bg-zinc-950/70 backdrop-blur-2xl backdrop-saturate-150 p-2 ring-1 ring-white/10 shadow-2xl shadow-black/60"
+            >
+              <nav className="flex flex-col">
+                {NAV_ITEMS.map((item) => (
+                  <motion.a
+                    key={item.label}
+                    variants={rungVariants}
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className="px-3 py-2.5 rounded-xl text-sm font-medium text-white/80 hover:text-white hover:bg-white/10"
+                  >
+                    {item.label}
+                  </motion.a>
+                ))}
+                <motion.a
+                  variants={rungVariants}
+                  href="#contact"
                   onClick={() => setOpen(false)}
-                  className="px-3 py-2.5 rounded-xl text-sm font-medium text-white/80 hover:text-white hover:bg-white/10"
+                  className="mt-1 inline-flex items-center justify-center h-10 rounded-xl bg-white text-background text-sm font-medium"
                 >
-                  {item.label}
-                </a>
-              ))}
-              <a
-                href="#contact"
-                onClick={() => setOpen(false)}
-                className="mt-1 inline-flex items-center justify-center h-10 rounded-xl bg-white text-background text-sm font-medium"
+                  Contact
+                </motion.a>
+              </nav>
+              <motion.div
+                variants={rungVariants}
+                className="flex items-center gap-1 mt-2 px-1"
               >
-                Contact
-              </a>
-            </nav>
-            <div className="flex items-center gap-1 mt-2 px-1">
-              {SOCIAL_ITEMS.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  className="inline-flex items-center justify-center w-9 h-9 rounded-xl text-white/75 hover:text-white hover:bg-white/10 transition-colors"
-                >
-                  {s.icon}
-                </a>
-              ))}
-            </div>
-          </div>
-        )}
+                {SOCIAL_ITEMS.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    className="inline-flex items-center justify-center w-9 h-9 rounded-xl text-white/75 hover:text-white hover:bg-white/10 transition-colors"
+                  >
+                    {s.icon}
+                  </a>
+                ))}
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );
