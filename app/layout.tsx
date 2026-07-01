@@ -14,7 +14,7 @@ import BackToTop from "./components/BackToTop";
 export const metadata: Metadata = {
   title: "Tony Nguyen Le",
   description:
-    "Tony Nguyen Le — software developer building real estate tools at Easy Eiendom.",
+    "Tony Nguyen Le — Lead Software Engineer building real estate tools at Easy Eiendom.",
 };
 
 export default function RootLayout() {
