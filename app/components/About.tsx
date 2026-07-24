@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import profilePicture from "../images/profile.picture.jpg";
+import GithubHeatmap from "./GithubHeatmap";
 
 const About = () => {
   return (
@@ -50,6 +51,8 @@ const About = () => {
           </a>{" "}
           — making Norwegian property data easier to use for everyone.
         </p>
+
+        <GithubHeatmap user="TonyLe02" />
       </motion.div>
     </section>
   );
