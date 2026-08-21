@@ -32,7 +32,7 @@ const About = () => {
         </div>
 
         <p className="text-[11px] uppercase tracking-[0.24em] text-white/55 mb-4">
-          Lead Software Engineer · Norway
+          Software Engineer | CTO @ Easy Eiendom · Norway
         </p>
 
         <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-white mb-5 !leading-[1.05] max-w-3xl">
