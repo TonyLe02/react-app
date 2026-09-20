@@ -8,6 +8,7 @@ import Swipload from "../images/swipload-logo.png";
 import Nøsted from "../images/nøsted-logo.png";
 import NITO from "../images/nito-logo.png";
 import UiA from "../images/uia-logo.png";
+import Easy from "../images/easy-logo.svg";
 
 import GradEasy from "../images/gradient-easy.png";
 import GradSwipload from "../images/gradient-swipload.png";
@@ -30,7 +31,7 @@ const ORGS: Org[] = [
     name: "Easy Eiendom",
     label: "Employer",
     href: "https://app.easyeiendom.no/",
-    logo: "/easy-logo.svg",
+    logo: Easy.src,
     gradient: GradEasy,
     span: "md:col-span-2",
     logoClass: "max-h-20 max-w-[40%]",
